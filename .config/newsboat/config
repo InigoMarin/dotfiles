@@ -1,0 +1,51 @@
+# -- feeds ---------------------------------------------------------------------
+
+auto-reload yes
+reload-time 120
+reload-threads 4
+download-retries 4
+download-timeout 10
+prepopulate-query-feeds yes
+
+
+# -- display -------------------------------------------------------------------
+
+show-read-feeds no
+feed-sort-order unreadarticlecount-asc
+
+color info default default reverse
+color listnormal_unread yellow default
+color listfocus blue default reverse bold
+color listfocus_unread blue default reverse bold
+
+text-width 80
+
+browser "chromium-browser %u"
+macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser "chromium-browser %u"
+macro t set browser "transmission-remote -a %u"; open-in-browser ; set browser "chromium-browser %u"
+macro w set browser "lynx"; open-in-browser ; set browser "chromium-browser %u"
+
+#------------------------------------
+#Install dependecies"
+#sudo apt-get install task-spooler
+#sudo apt-get install youtube-dl
+#------------------------------------
+
+macro d set browser "tsp youtube-dl –add-metadata -ic"; open-in-browser ; set browser "chromium-browser %u"
+macro m set browser "tsp youtube-dl –add-metadata -xic"; open-in-browser ; set browser "chromium-browser %u"
+macro M set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser "chromium-browser %u"
+
+download-path   "~/Descargas/rss/%n"
+save-path       "~/Descargas/rss"
+reload-threads  20
+cleanup-on-quit yes
+text-width      74
+
+bind-key - quit
+bind-key G end
+bind-key g home
+bind-key j down
+bind-key k up
+
+confirm-exit no
+cleanup-on-quit yes

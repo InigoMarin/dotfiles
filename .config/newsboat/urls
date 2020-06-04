@@ -1,0 +1,50 @@
+---------------------
+------ TORRENT ------
+---------------------
+http://esrora.x10host.com/descargas2020.xml torrent "TORRENT - Descargas2020
+---------------------
+------ YOUTUBE ------
+---------------------
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg linux youtube "~YOUTUBE - Distrotube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA linux youtube "~YOUTUBE - Luke Smith"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg linux youtube "~YOUTUBE - Erik Dubois"¬
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsdiYVQUylCMLg linux youtube "~YOUTUBE - Nick Janetakis"¬
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCnr1xo1iggZmm3lh-TX-vQ linux youtube "~YOUTUBE - 4SoftwareDevelopers"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA linux youtube "~YOUTUBE - Brodie Robertson"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCH7IANkyEcsVW_y1IlpkamQ programacion youtube "~YOUTUBE - Bluuweb!"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrBzBOMcUVV8ryyAU_c6P5g virtualizacion youtube "~YOUTUBE - Pelado Nerd!"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNHWpNqiM8yOQcHXtsluD7Q hack youtube "~YOUTUBE - Savitar"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw hack youtube "~YOUTUBE - John Hammond"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2o1vzpUIvgf0VMJIMKZ_rQ hack youtube "~YOUTUBE - Julio Ureña"
+---------------------
+---------------------
+------ RSS ----------
+---------------------
+https://twitchrss.appspot.com/vod/S4vitaar "~TWITCH - Savitar"
+https://vimways.org/index.xml linux vim
+https://nikodoko.com/index.xml linux vim
+https://feeds.feedburner.com/d0od linux
+https://www.muylinux.com/feed/ linux
+https://www.meneame.net/rss general
+https://www.tecmint.com/feed/ linux
+https://www.howtoforge.com/feed.rss linux
+https://www.atareao.es/feed/ linux
+http://feeds.feedburner.com/uGeekBlog linux
+https://neovim.io/news.xml linux vim
+https://www.linux.com/feed/ linux
+https://www.cyberciti.biz/feed/ linux
+https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed ciberseguridad
+https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed ciberseguridad
+http://rss.epublibre.org/rss/semanal libros
+http://www.bujarra.com/feed/ geek
+---------------------
+------ GIT ----------
+---------------------
+https://github.com/neovim/neovim/releases.atom nvim github
+https://github.com/vim/vim/releases.atom vim github 
+https://github.com/neoclide/coc.nvim/releases.atom coc vim
+---------------------
+------ REDDIT -------
+---------------------
+https://www.reddit.com/r/vim/.rss  "~REDDIT - VIM" REDDIT
+https://www.reddit.com/r/unixporn/.rss "~REDDIT - UNIXPORN" REDDIT
