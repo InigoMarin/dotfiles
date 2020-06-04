@@ -1,0 +1,39 @@
+set -g prefix C-a
+
+# -----------------------------------------------------------------------------
+# Key bindings
+# -----------------------------------------------------------------------------
+
+
+# Enable mouse control (clickable windows, panes, resizable panes)
+set -g mouse on
+
+# Reload the tmux config.
+bind-key r source-file ~/.tmux.conf
+
+# Split panes.
+bind-key -n M-v split-window -v
+bind-key -n M-h split-window -h
+
+
+# Move around panes with ALT + arrow keys.
+
+bind-key -n M-Up select-pane -U
+bind-key -n M-Left select-pane -L
+bind-key -n M-Down select-pane -D
+bind-key -n M-Right select-pane -R
+
+# Resize panes
+bind-key -n C-Left resize-pane -L 5
+bind-key -n C-Right resize-pane -R 5
+bind-key -n C-Down resize-pane -D 5
+bind-key -n C-Up resize-pane -U 5
+
+# Move windows
+bind-key -n M-w choose-window
+bind-key -n M-c new-window
+bind-key -n M-n next-window
+bind-key -n M-p previous-window
+
+
+
