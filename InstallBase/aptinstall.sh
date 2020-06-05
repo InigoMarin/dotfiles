@@ -24,7 +24,7 @@ install nmap
 install tmux
 install unrar
 install unzip
-install p7zi
+install p7zip
 install wakeonlan
 install synaptic
 
