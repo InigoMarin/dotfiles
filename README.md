@@ -6,7 +6,7 @@ source ~/.zshrc
 
 echo ".dotfiles" >> .gitignore
 
-git clone --bare https://www.github.com/InigoMarin/repo.git $HOME/.dotfiles
+git clone --bare https://www.github.com/InigoMarin/dotfiles.git $HOME/.dotfiles
 
 dotfiles checkout
 
