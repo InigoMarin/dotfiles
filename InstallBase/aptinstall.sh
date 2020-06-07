@@ -14,7 +14,7 @@ function install {
 }
 
 # Basics
-nstall curl
+install curl
 install wget
 install exfat-utils
 install file
@@ -27,11 +27,17 @@ install unzip
 install p7zip
 install wakeonlan
 install synaptic
+install pandoc
+install lynx
 
+# Console web searcher
+
+install googler
+install ddgr
 
 # Browser
 install chromium-browser
-install qutebrowser 
+install qutebrowser
 install firefox
 
 # Remote
