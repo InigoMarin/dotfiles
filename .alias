@@ -82,13 +82,10 @@ alias latexmkp='latexmk -pdf -pvc'
 # sudo apt install pandoc lynx
 
 mds() { pandoc $1 | lynx -stdin;}
-vf() { fzf | xargs -I {} nvim '{}' ;}
-rsv() { du -a .| cut -f2 | grep  -e .mp4 -e .mkv | sort | fzf | xargs -I {} mpv '{}'; }
-rpdf() { du -a .| cut -f2 | grep  -e .pdf | fzf | xargs -I {} zathura '{}'; }
-rv() { du -a .| cut -f2 | grep  -e $1 | grep -e .mp4 -e .avi -e .mpeg -e .mpg -e .mkv | xargs -I {} mpv '{}'; }
-rvp() { du -a .| cut -f2 | grep  -e $1 | grep -e .mp4 -e .avi -e .mpeg -e .mpg ; }
-
-
+rse() { fzf | xargs -I {} nvim '{}'; }
+rsi() {du . | cut -f2 | fzf | xargs -I {} sxiv '{}'; }
+rsv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf | xargs -I {} mpv '{}'; }
+rpdf() { du -a .| cut -f2 | grep  -e ".pdf$" | fzf | xargs -I {} zathura '{}'; }
 
 # fzf improvement
 function fzf-lovely(){

@@ -29,6 +29,8 @@ install wakeonlan
 install synaptic
 install pandoc
 install lynx
+install sxiv
+install pulsemixer
 
 # Console web searcher
 
