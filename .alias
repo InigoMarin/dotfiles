@@ -62,6 +62,13 @@ alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
 
 
+# Spring Boot
+
+alias sbr='mvn spring-boot:run'
+alias sbs='mvn spring-boot:start'
+alias sps='mvn sprinng-boot:stop'
+
+
 # Extra
 #alias config='nvim /home/imarin/.config/i3/config'
 #alias configq='nvim /home/imarin/.config/qtile/config.py'
