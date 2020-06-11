@@ -12,7 +12,7 @@ set -g mouse on
 bind-key r source-file ~/.tmux.conf
 
 # Split panes.
-bind-key -n M-v split-window -v
+bind-key -n M-s split-window -v
 bind-key -n M-h split-window -h
 
 
