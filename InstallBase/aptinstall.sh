@@ -29,7 +29,6 @@ install wakeonlan
 install synaptic
 install pandoc
 install lynx
-install sxiv
 install ripgrep
 install pulsemixer
 
@@ -73,3 +72,9 @@ install fortunes-es-off
 
 # Games
 install steam
+
+# DWM
+install feh
+install suckless-tools
+install compton
+install sxiv
