@@ -16,6 +16,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias cdt='cd $HOME/trabajo'
+alias cp='cp -iv'
 alias t='tmux'
 alias v='nvim'
 alias vim='nvim'
@@ -92,7 +93,7 @@ mds() { pandoc $1 | lynx -stdin;}
 rse() { fzf | xargs -I {} nvim '{}'; }
 rsi() {du . | cut -f2 | fzf | xargs -I {} sxiv '{}'; }
 rsv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf | xargs -I {} mpv '{}'; }
-rpdf() { du -a .| cut -f2 | grep  -e ".pdf$" | fzf | xargs -I {} zathura '{}'; }
+rspdf() { du -a .| cut -f2 | grep  -e ".pdf$" | fzf | xargs -I {} zathura '{}'; }
 
 # fzf improvement
 function fzf-lovely(){

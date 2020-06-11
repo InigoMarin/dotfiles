@@ -80,7 +80,7 @@ if executable('rg')
 endif
 
 let loaded_matchparen = 1
-let mapleader = " "
+let mapleader = ","
 
 let g:netrw_browse_split = 2
 let g:vrfr_rg = 'true'
@@ -156,6 +156,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
+nmap <leader>gc :Gcommit<CR>
 
 fun! TrimWhitespace()
     let l:save = winsaveview()

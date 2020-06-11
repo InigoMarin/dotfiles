@@ -30,7 +30,9 @@ install synaptic
 install pandoc
 install lynx
 install sxiv
+install ripgrep
 install pulsemixer
+
 
 # Console web searcher
 
@@ -56,6 +58,10 @@ install gimp
 install jpegoptim
 install optipng
 
+# Fonts
+install fonts-powerline
+install fonts-firacode
+install fonts-symbola
 
 # Fun stuff
 install figlet
