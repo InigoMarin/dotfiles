@@ -28,5 +28,5 @@ feh --bg-fill --randomize $HOME/wallpapers/* &
 
 # Start music player daemon controller
 mpDris2 &
-#dwmblocks &
+dwmblocks &
 exec /usr/local/bin/dwm

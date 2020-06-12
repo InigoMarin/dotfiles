@@ -1,4 +1,4 @@
-all: dependencies dwm sti dwmblocks desktop clean
+all: dependencies dwm st dwmblocks desktop clean
 
 dependencies:
 	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev -y
