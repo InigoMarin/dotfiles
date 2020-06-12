@@ -1,4 +1,4 @@
-all: dependencies dwm st dwmblocks desktop monitor clean
+all: dependencies dwm st dwmblocks desktop clean
 
 dependencies:
 	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev -y
@@ -15,8 +15,6 @@ desktop:
 	sudo cp dwm-modified.desktop /usr/share/xsessions/
 	sudo cp dwm-start /usr/local/bin/
 
-monitor:
-	sudo chmod o+w /sys/class/backlight/intel_backlight/brightness
 
 clean:
 	rm -fr dwm
