@@ -80,3 +80,4 @@ install compton
 install sxiv
 install lm-sensors
 install rofi
+install light
