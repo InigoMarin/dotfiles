@@ -1,4 +1,4 @@
-all: dependencies dwm st desktop clean
+all: dependencies dwm sti dwmblocks desktop clean
 
 dependencies:
 	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev -y
@@ -8,6 +8,9 @@ dwm:
 st:
 	git clone https://github.com/InigoMarin/st.git && cd st && sudo make install
 
+dwmblocks:
+	git clone https://github.com/InigoMarin/dwmblocks.git && cd dwmblocks && sudo make install
+
 desktop:
 	sudo cp dwm-modified.desktop /usr/share/xsessions/
 	sudo cp dwm-start /usr/local/bin/
@@ -15,4 +18,4 @@ desktop:
 clean:
 	rm -fr dwm
 	rm -fr st
-
+	rm -fr dwmblocks
