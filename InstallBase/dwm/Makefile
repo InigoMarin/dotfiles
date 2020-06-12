@@ -1,10 +1,12 @@
-all: dwm st desktop clean
+all: dependencies dwm st desktop clean
 
+dependencies:
+	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev -y
 dwm:
 	git clone https://github.com/InigoMarin/dwm.git && cd dwm && sudo make install
 
 st:
-	git clone https://github.com/InigoMarin/st.git && cd st && sudo make st
+	git clone https://github.com/InigoMarin/st.git && cd st && sudo make install
 
 desktop:
 	sudo cp dwm-modified.desktop /usr/share/xsessions/
