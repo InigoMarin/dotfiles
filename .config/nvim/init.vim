@@ -54,6 +54,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug '/home/mpaulson/personal/vim-be-good'
 
+Plug 'chrisbra/colorizer'
 call plug#end()
 
 " --- vim go (polyglot) settings.

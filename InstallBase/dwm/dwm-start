@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Export variables
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_STYLE_OVERRIDE=gtk2
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Prepare keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets)
+
+# Start mpd service
+mpd /$HOME/.mpd/config &
+
+# Start polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Start compton
+#compton --config ~/.config/compton/config &
+compton &
+
+# Start notification daemon
+dunst &
+
+
+# Set wallpaper
+#feh --bg-fill $HOME/wallpapers/juego-de-tronos1.jpg &
+feh --bg-fill --randomize $HOME/wallpapers/* &
+
+# Start music player daemon controller
+mpDris2 &
+dwmblocks & 
+exec /usr/local/bin/dwm

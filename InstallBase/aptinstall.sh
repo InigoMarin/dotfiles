@@ -78,3 +78,4 @@ install feh
 install suckless-tools
 install compton
 install sxiv
+install lm-sensors
