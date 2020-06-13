@@ -15,6 +15,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Shift><Su
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Shift><Super>periodcentered']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Shift><Super>dollar']"
 
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
 
 # Set up the desktop
 
