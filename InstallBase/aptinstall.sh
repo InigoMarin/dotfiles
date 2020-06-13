@@ -31,7 +31,8 @@ install pandoc
 install lynx
 install ripgrep
 install pulsemixer
-
+install youtube-dl
+install task-spooler
 
 # Console web searcher
 
