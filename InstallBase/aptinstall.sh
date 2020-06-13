@@ -81,3 +81,5 @@ install sxiv
 install lm-sensors
 install rofi
 install maim
+install surfraw
+install gawk

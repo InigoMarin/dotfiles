@@ -8,6 +8,7 @@ alias desmontar='sudo umount /mnt/prot'
 alias trem='transmission-remote-gtk'
 alias mpds='mpd /home/ima/.mpd/config'
 alias m='ncmpcpp'
+alias n='newsboat'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Easier navigation: .., ..., ...., ....., ~ and -

@@ -16,6 +16,12 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCrBzBOMcUVV8ryyAU_c6P5g vir
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNHWpNqiM8yOQcHXtsluD7Q hack youtube "~YOUTUBE - Savitar"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw hack youtube "~YOUTUBE - John Hammond"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2o1vzpUIvgf0VMJIMKZ_rQ hack youtube "~YOUTUBE - Julio Ureña"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw vim youtube "~YOUTUBE - ThePrimeagen"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA linux youtube "~YOUTUBE - gotbletu"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA linux youtube "~YOUTUBE - Chrisatmach"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFFLP0dKesrKWccYscdAr9A linux youtube "~YOUTUBE - theurbanpenguin"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFBwTxfz6oFJA2Opg3cDEVA programacion youtube "~YOUTUBE - Barranquilla Java Users Group"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFgVjfMq-jhN6V9h5ZLAeIA programacion youtube "~YOUTUBE - Barcelona Jug"
 ---------------------
 ---------------------
 ------ RSS ----------
@@ -41,7 +47,7 @@ http://www.bujarra.com/feed/ geek
 ------ GIT ----------
 ---------------------
 https://github.com/neovim/neovim/releases.atom nvim github
-https://github.com/vim/vim/releases.atom vim github 
+https://github.com/vim/vim/releases.atom vim github
 https://github.com/neoclide/coc.nvim/releases.atom coc vim
 ---------------------
 ------ REDDIT -------
