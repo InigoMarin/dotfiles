@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# AUTHOR: Iñigo Marin
+#
+# DATE: Sat Jun 13 2021
+#
+# DESC: Elvi to search Filmaffinity
+# elvis: filmaffinity  -- Search Filmaffinity (filmaffinity.com)
+. surfraw || exit 1
+
+w3_usage_hook () {
+    cat <<EOF
+Usage: $w3_argv0 [options] [search words]...
+Description:
+  Search Filmaffinity (filmaffinity.com) for videos
+EOF
+    w3_global_usage
+}
+
+w3_config
+w3_parse_args "$@"
+if test -z "$w3_args"; then
+    w3_browse_url "https://filmaffinity.com"
+else
+    escaped_args=`w3_url_of_arg $w3_args`
+    w3_browse_url "https://www.filmaffinity.com/es/search.php?stext==${escaped_args}"
+fi
