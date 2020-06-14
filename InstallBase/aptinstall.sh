@@ -33,7 +33,7 @@ install ripgrep
 install pulsemixer
 install youtube-dl
 install task-spooler
-
+install pass
 # Console web searcher
 
 install googler
@@ -84,3 +84,4 @@ install rofi
 install maim
 install surfraw
 install gawk
+install xsel
