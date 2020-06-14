@@ -28,7 +28,7 @@ install p7zip
 install wakeonlan
 install synaptic
 install pandoc
-install lynx
+install w3m
 install ripgrep
 install pulsemixer
 install youtube-dl
