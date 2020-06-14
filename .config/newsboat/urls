@@ -1,60 +1,106 @@
 ---------------------
 ------ TORRENT ------
 ---------------------
-http://esrora.x10host.com/descargas2020.xml torrent "TORRENT - Descargas2020
+http://esrora.x10host.com/descargas2020.xml "TORRENT: Descargas2020
 ---------------------
 ------ YOUTUBE ------
 ---------------------
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg linux youtube "~YOUTUBE - Distrotube"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA linux youtube "~YOUTUBE - Luke Smith"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg linux youtube "~YOUTUBE - Erik Dubois"¬
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsdiYVQUylCMLg linux youtube "~YOUTUBE - Nick Janetakis"¬
-https://www.youtube.com/feeds/videos.xml?channel_id=UCCnr1xo1iggZmm3lh-TX-vQ linux youtube "~YOUTUBE - 4SoftwareDevelopers"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA linux youtube "~YOUTUBE - Brodie Robertson"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCH7IANkyEcsVW_y1IlpkamQ programacion youtube "~YOUTUBE - Bluuweb!"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCrBzBOMcUVV8ryyAU_c6P5g virtualizacion youtube "~YOUTUBE - Pelado Nerd!"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCNHWpNqiM8yOQcHXtsluD7Q hack youtube "~YOUTUBE - Savitar"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw hack youtube "~YOUTUBE - John Hammond"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2o1vzpUIvgf0VMJIMKZ_rQ hack youtube "~YOUTUBE - Julio Ureña"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw vim youtube "~YOUTUBE - ThePrimeagen"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA linux youtube "~YOUTUBE - gotbletu"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA linux youtube "~YOUTUBE - Chrisatmach"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFFLP0dKesrKWccYscdAr9A linux youtube "~YOUTUBE - theurbanpenguin"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFBwTxfz6oFJA2Opg3cDEVA programacion youtube "~YOUTUBE - Barranquilla Java Users Group"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFgVjfMq-jhN6V9h5ZLAeIA programacion youtube "~YOUTUBE - Barcelona Jug"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~YOUTUBE: Distrotube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg "~YOUTUBE: Erik Dubois"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCnr1xo1iggZmm3lh-TX-vQ "~YOUTUBE: 4SoftwareDevelopers"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~YOUTUBE: Brodie Robertson"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCH7IANkyEcsVW_y1IlpkamQ "~YOUTUBE: Bluuweb!"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrBzBOMcUVV8ryyAU_c6P5g "~YOUTUBE: Pelado Nerd!"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNHWpNqiM8yOQcHXtsluD7Q "~YOUTUBE: Savitar"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw "~YOUTUBE: John Hammond"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2o1vzpUIvgf0VMJIMKZ_rQ "~YOUTUBE: Julio Ureña"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw "~YOUTUBE: ThePrimeagen"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~YOUTUBE: gotbletu"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA "~YOUTUBE: Chrisatmach"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFFLP0dKesrKWccYscdAr9A "~YOUTUBE: theurbanpenguin"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFBwTxfz6oFJA2Opg3cDEVA "~YOUTUBE: Barranquilla Java Users Group"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFgVjfMq-jhN6V9h5ZLAeIA "~YOUTUBE: Barcelona Jug"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwY9B5_8QDGP8niZhBtTh8w "~YOUTUBE: TWiT Netcast"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHugE6eRhqB9_AZQh4DDbIw "~YOUTUBE: Jupiter Broadcasting"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkK9UDm_ZNrq_rIXCz3xCGA "~YOUTUBE: Bryan Lunduke"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWJUSpXVHTaHErtGWC5qPlQ "~YOUTUBE: Destination Linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4w1YQAJMWOz4qtxinq55LQ "~YOUTUBE: Level1Techs"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCOWcZ6Wicl-1N34H0zZe38w "~YOUTUBE: Level1Linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCv1Kcz-CuGM6mxzL3B1_Eiw "~YOUTUBE: The Linux Gamer"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRBHiacaQb5S70pljtJYB2g "~YOUTUBE: EposVox"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~YOUTUBE: Linus Tech Tips"
+
 ---------------------
 ---------------------
 ------ RSS ----------
 ---------------------
 https://twitchrss.appspot.com/vod/S4vitaar "~TWITCH - Savitar"
-https://vimways.org/index.xml linux vim
-https://nikodoko.com/index.xml linux vim
-https://feeds.feedburner.com/d0od linux
-https://www.muylinux.com/feed/ linux
-https://www.meneame.net/rss general
-https://www.tecmint.com/feed/ linux
-https://www.howtoforge.com/feed.rss linux
-https://www.atareao.es/feed/ linux
-http://feeds.feedburner.com/uGeekBlog linux
-https://neovim.io/news.xml linux vim
-https://www.linux.com/feed/ linux
-https://www.cyberciti.biz/feed/ linux
-https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed ciberseguridad
-https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed ciberseguridad
-http://rss.epublibre.org/rss/semanal libros
-http://www.bujarra.com/feed/ geek
+https://vimways.org/index.xml "~NEWSFEED: Vimways"
+https://nikodoko.com/index.xml "~NEWSFEED: Mikodoko"
+https://feeds.feedburner.com/d0od "~NEWSFEED: d0od"
+https://www.muylinux.com/feed/ "~NEWSFEED: Muylinux"
+https://www.meneame.net/rss "~NEWSFEED: Meneamae"
+https://www.tecmint.com/feed/ "~NEWSFEED: Tecmint"
+https://www.howtoforge.com/feed.rss "~NEWSFEED: Howtoforge"
+https://www.atareao.es/feed/ "~NEWSFEED: Atareao"
+http://feeds.feedburner.com/uGeekBlog "~NEWSFEED: Ugeek"
+https://neovim.io/news.xml "~NEWSFEED: Neovim"
+https://www.linux.com/feed/ "~NEWSFEED: Linux"
+https://www.cyberciti.biz/feed/ "~NEWSFEED: Cibercti"
+https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed "~NEWSFEED: Cert Noticias"
+https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed "~NEWSFEED: Cert vulnerabilidades"
+http://rss.epublibre.org/rss/semanal "~EPUB: Epubublibre"
+http://www.bujarra.com/feed/ geek "~NEWSFEED: Bujarra"
+https://distrowatch.com/news/dw.xml "~NEWSFEED: DistroWatch"
+http://lxer.com/module/newswire/headlines.rss "~NEWSFEED: LXer"
+https://www.linuxjournal.com/news/feed "~NEWSFEED: Linux Journal"
+https://www.networkworld.com/category/linux/index.rss "~NEWSFEED: Network World (Linux)"
+https://www.computerworld.com/index.rss "~NEWSFEED: Computer World"
+http://feeds.feedburner.com/d0od "~NEWSFEED: OMG Ubuntu!"
+https://www.phoronix.com/rss.php "~NEWSFEED: Phoronix"
+https://www.zdnet.com/topic/linux/rss.xml "~NEWSFEED: ZDNet (Linux)"
+https://itsfoss.com/feed/ "~NEWSFEED: It's Foss"
+https://linux.softpedia.com/backend.xml "~NEWSFEED: Softpedia (Linux)"
+https://opensource.com/feed "~NEWSFEED: Opensource.com"
+https://betanews.com/feed/ "~NEWSFEED: Beta News"
+http://feeds.feedburner.com/fossbytes "~NEWSFEED: FossBytes"
+https://www.techrepublic.com/rssfeeds/topic/open-source/ "~NEWSFEED: Tech Republic (Open Source)"
+http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Open Source)"
+https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
+https://www.gamingonlinux.com/article_rss.php "~NEWSFEED: Gaming On Linux"
+
 ---------------------
 ------ GIT ----------
 ---------------------
-https://github.com/neovim/neovim/releases.atom nvim github
-https://github.com/vim/vim/releases.atom vim github
-https://github.com/neoclide/coc.nvim/releases.atom coc vim
-https://github.com/LukeSmithxyz/dwm/commits/master.atom dwm github
-https://github.com/LukeSmithxyz/st/commits/master.atom st github
-https://github.com/LukeSmithxyz/dwmblocks/commits/master.atom dwmblocks github
-https://github.com/LukeSmithxyz/voidrice/commits/master.atom dotfiles github
+https://github.com/neovim/neovim/releases.atom "~GITHUB: Neovim releases"
+https://github.com/vim/vim/releases.atom "~GITHUB: Git releases"
+https://github.com/neoclide/coc.nvim/releases.atom "~GITHUB: Coc releases"
+https://github.com/LukeSmithxyz/dwm/commits/master.atom "~GITHUB: Dwm LukeSmithxyz commits "
+https://github.com/LukeSmithxyz/st/commits/master.atom "~GITHUB: St LukeSmithxyz commits "
+https://github.com/LukeSmithxyz/dwmblocks/commits/master.atom "~GITHUB: Dwmblocks LukeSmithxyz commits "
+https://github.com/LukeSmithxyz/voidrice/commits/master.atom "~GITHUB: Voidrice LukeSmithxyz commits "
+https://gitlab.com/dwt1.atom "~GITLAB: dwt1 (distrotube)"
+https://github.com/LukeSmithxyz.atom "~GITHUB: LukeSmithxyz"
 ---------------------
 ------ REDDIT -------
 ---------------------
-https://www.reddit.com/r/vim/.rss  "~REDDIT - VIM" REDDIT
-https://www.reddit.com/r/unixporn/.rss "~REDDIT - UNIXPORN" REDDIT
+https://www.reddit.com/r/vim/.rss  "~REDDIT: r/vim"
+https://www.reddit.com/r/unixporn/.rss "~REDDIT: r/unixporn"
+https://www.reddit.com/r/linux.rss "~REDDIT: r/linux"
+https://www.reddit.com/r/commandline.rss "~REDDIT: r/commandline"
+https://www.reddit.com/r/linux4noobs.rss "~REDDIT: r/linux4noobs"
+https://www.reddit.com/r/linuxquestions.rss "~REDDIT: r/linuxquestions"
+https://www.reddit.com/r/linuxmasterrace.rss "~REDDIT: r/linuxmasterrace"
+https://www.reddit.com/r/linux_gaming.rss "~REDDIT: r/linux_gaming"
+https://www.reddit.com/r/linuxaudio.rss "~REDDIT: r/linuxaudio"
+https://www.reddit.com/r/ubuntu.rss "~REDDIT: r/ubuntu"
+-------------------------
+-------SOURCEFORGE-------
+-------------------------
+https://sourceforge.net/p/clonezilla/activity/feed "~SOURCEFORGE: Clonezilla"
+https://sourceforge.net/p/mx-linux/activity/feed "~SOURCEFORGE: MX Linux"
+https://sourceforge.net/p/antix-linux/activity/feed "~SOURCEFORGE: AntiX"
+https://sourceforge.net/mirror/tor-browser/activity/feed "~SOURCEFORGE: Tor Browse
+

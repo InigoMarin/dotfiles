@@ -1,5 +1,6 @@
 export BROWSER=/usr/bin/qutebrowser
 
+
 alias domusa='sudo openvpn --config /home/ima/domusa.ovpn'
 alias pcinf11='rdesktop -r disk:test=/home/ima/Descargas -u ima -d samudo.local -g 1280x720 10.0.17.100'
 alias vmtc1='rdesktop -r5 -r disk:test=/home/ima/Descargas -z 10.0.100.25 -f -u admintc -d vmtc1 -g 1920x1080'
@@ -94,7 +95,8 @@ alias latexmkp='latexmk -pdf -pvc'
 mds() { pandoc $1 | w3m -T text/html;}
 rse() { fzf | xargs -I {} nvim '{}'; }
 rsi() {du . | cut -f2 | fzf | xargs -I {} sxiv '{}'; }
-rsv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf | xargs -I {} mpv '{}'; }
+rsv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf -m | xargs -I {} mpv '{}'; }
+rsvv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf -m | xargs -I {} vlc --playlist-enqueue '{}'; }
 rspdf() { du -a .| cut -f2 | grep  -e ".pdf$" | fzf | xargs -I {} zathura '{}'; }
 
 # fzf improvement

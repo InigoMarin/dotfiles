@@ -9,9 +9,8 @@ prepopulate-query-feeds yes
 
 
 # -- display -------------------------------------------------------------------
-
+feed-sort-order title
 show-read-feeds no
-feed-sort-order unreadarticlecount-asc
 
 color info default default reverse
 color listnormal_unread yellow default
