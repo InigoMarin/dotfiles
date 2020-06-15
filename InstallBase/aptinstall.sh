@@ -85,3 +85,13 @@ install maim
 install surfraw
 install gawk
 install xsel
+install dunst
+
+# MPD
+install mpd
+install ncmpcpp
+install mpc
+install python-mutagen
+install python3-mutagen
+install mpdris2
+

@@ -26,8 +26,5 @@ dunst &
 #feh --bg-fill $HOME/wallpapers/juego-de-tronos1.jpg &
 feh --bg-fill --randomize $HOME/wallpapers/* &
 
-# Start music player daemon controller
-mpDris2 &
 dwmblocks &
-clipmenud &
 exec /usr/local/bin/dwm
