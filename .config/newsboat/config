@@ -36,9 +36,9 @@ highlight article     ":.*\\(embedded flash\\)$"            magenta  default
 
 highlight feedlist "YOUTUBE: .*" red default
 highlight feedlist "NEWSFEED: .*" green default
-highlight feedlist "REEDIT" white default
-highlight feedlist "GITHUB" magenta default
-
+highlight feedlist "REEDIT: .*" white default
+highlight feedlist "GITHUB: .*" magenta default
+highlight feedlist "TORRENT: .*" cyan default
 
 text-width 80
 
@@ -47,6 +47,8 @@ macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser "qutebr
 macro t set browser "transmission-remote -a %u"; open-in-browser ; set browser "qutebrowser"
 macro w set browser "lynx"; open-in-browser ; set browser "qutebrowser"
 macro i set browser "dmenu-sr-primary"; open-in-browser ; set browser "qutebrowser"
+macro p set browser "dmenuhandler"; open-in-browser ; set browser "qutebrowser"
+macro f set browser "filmaffinity"; open-in-browser ; set browser "qutebrowser"
 
 #------------------------------------
 #Install dependecies"
