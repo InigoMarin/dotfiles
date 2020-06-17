@@ -20,14 +20,16 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA "~YOUTUBE: Chrisatmach"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFFLP0dKesrKWccYscdAr9A "~YOUTUBE: theurbanpenguin"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFBwTxfz6oFJA2Opg3cDEVA "~YOUTUBE: Barranquilla Java Users Group"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCFgVjfMq-jhN6V9h5ZLAeIA "~YOUTUBE: Barcelona Jug"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCwY9B5_8QDGP8niZhBtTh8w "~YOUTUBE: TWiT Netcast"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHugE6eRhqB9_AZQh4DDbIw "~YOUTUBE: Jupiter Broadcasting"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkK9UDm_ZNrq_rIXCz3xCGA "~YOUTUBE: Bryan Lunduke"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC4w1YQAJMWOz4qtxinq55LQ "~YOUTUBE: Level1Techs"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCOWcZ6Wicl-1N34H0zZe38w "~YOUTUBE: Level1Linux"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCv1Kcz-CuGM6mxzL3B1_Eiw "~YOUTUBE: The Linux Gamer"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRBHiacaQb5S70pljtJYB2g "~YOUTUBE: EposVox"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9IKtxn9AIGelnYmwYr0Lxw "~YOUTUBE: Codelytv" programacion
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvZ6HKYcDtqtK1SfbIpB97g "~YOUTUBE: Autentia" programacion
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYeDPubBiFCZXIOgGYoyADw "~YOUTUBE: Thorben Janssen" programacion
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7yfnfvEUlXUIfm8rGLwZdA "~YOUTUBE: Spring Developer" programacion
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9fAeSPVw7mAAbexCS7gPqw "~YOUTUBE: MitoCode " programacion
 
 ---------------------
 ---------------------
@@ -46,7 +48,7 @@ http://feeds.feedburner.com/uGeekBlog "~NEWSFEED: Ugeek"
 https://neovim.io/news.xml "~NEWSFEED: Neovim"
 https://www.linux.com/feed/ "~NEWSFEED: Linux"
 https://www.cyberciti.biz/feed/ "~NEWSFEED: Cibercti"
-https://www.ccn-cert.cni.es/component/obrss/rss-noticias.feed "~NEWSFEED: Cert Noticias"
+
 https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed "~NEWSFEED: Cert vulnerabilidades"
 http://rss.epublibre.org/rss/semanal "~EPUB: Epubublibre"
 http://www.bujarra.com/feed/ geek "~NEWSFEED: Bujarra"
@@ -61,12 +63,13 @@ https://www.zdnet.com/topic/linux/rss.xml "~NEWSFEED: ZDNet (Linux)"
 https://itsfoss.com/feed/ "~NEWSFEED: It's Foss"
 https://linux.softpedia.com/backend.xml "~NEWSFEED: Softpedia (Linux)"
 https://opensource.com/feed "~NEWSFEED: Opensource.com"
-https://betanews.com/feed/ "~NEWSFEED: Beta News"
 http://feeds.feedburner.com/fossbytes "~NEWSFEED: FossBytes"
 https://www.techrepublic.com/rssfeeds/topic/open-source/ "~NEWSFEED: Tech Republic (Open Source)"
 http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Open Source)"
 https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 
+
+"https://www.arquitecturajava.com/feed/" "~NEWSFEED: Arquitectura java"
 ---------------------
 ------ GIT ----------
 ---------------------
