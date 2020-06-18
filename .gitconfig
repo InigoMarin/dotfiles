@@ -1,3 +1,6 @@
 [user]
 	email = inigomaringarcia@gmail.com
 	name = Iñigo Marin
+    user = InigoMarin
+[credential]
+	helper = cache --timeout=3600
