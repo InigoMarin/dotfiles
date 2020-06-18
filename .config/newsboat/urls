@@ -2,6 +2,7 @@
 ------ TORRENT ------
 ---------------------
 http://esrora.x10host.com/descargas2020.xml "~TORRENT: Descargas2020" "torrent"
+http://rss.epublibre.org/rss/semanal "~TORRENT: Epublibre"
 ---------------------
 ------ YOUTUBE ------
 ---------------------
@@ -49,7 +50,6 @@ https://www.linux.com/feed/ "~NEWSFEED: Linux"
 https://www.cyberciti.biz/feed/ "~NEWSFEED: Cibercti"
 
 https://www.ccn-cert.cni.es/component/obrss/rss-ultimas-vulnerabilidades.feed "~NEWSFEED: Cert vulnerabilidades"
-http://rss.epublibre.org/rss/semanal "~EPUB: Epubublibre"
 http://www.bujarra.com/feed/ geek "~NEWSFEED: Bujarra"
 https://distrowatch.com/news/dw.xml "~NEWSFEED: DistroWatch"
 http://lxer.com/module/newswire/headlines.rss "~NEWSFEED: LXer"
@@ -81,6 +81,7 @@ https://github.com/LukeSmithxyz/dwmblocks/commits/master.atom "~GITHUB: Dwmblock
 https://github.com/LukeSmithxyz/voidrice/commits/master.atom "~GITHUB: Voidrice LukeSmithxyz commits "
 https://gitlab.com/dwt1.atom "~GITLAB: dwt1 (distrotube)"
 https://github.com/LukeSmithxyz.atom "~GITHUB: LukeSmithxyz"
+https://github.com/BrodieRobertson.atom "~GITHUB: BrodieRobertson"
 ---------------------
 ------ REDDIT -------
 ---------------------
