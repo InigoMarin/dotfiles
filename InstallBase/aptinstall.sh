@@ -34,6 +34,7 @@ install pulsemixer
 install youtube-dl
 install task-spooler
 install pass
+install locate
 # Console web searcher
 
 install googler

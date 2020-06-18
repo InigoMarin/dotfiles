@@ -1,16 +1,18 @@
 export BROWSER=/usr/bin/qutebrowser
 export EDITOR=/usr/bin/nvim
+export TERMINAL=st
 
 alias domusa='sudo openvpn --config /home/ima/domusa.ovpn'
 alias pcinf11='rdesktop -r disk:test=/home/ima/Descargas -u ima -d samudo.local -g 1280x720 10.0.17.100'
 alias vmtc1='rdesktop -r5 -r disk:test=/home/ima/Descargas -z 10.0.100.25 -f -u admintc -d vmtc1 -g 1920x1080'
 alias montar='sudo mount 192.168.1.21:/media/prot_data /mnt/prot'
 alias desmontar='sudo umount /mnt/prot'
-alias trem='transmission-remote-gtk'
 alias mpds='mpd /home/ima/.mpd/config'
 alias m='ncmpcpp'
 alias n='newsboat'
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias t='tremc'
+
+alias dotfiiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..='cd ..'
