@@ -5,7 +5,7 @@ set shell bash
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
-set color256
+set color256 true
 set icons
 set period 1
 
@@ -64,6 +64,7 @@ cmd bulkrename ${{
 }}
 
 # Bindings
+map . set hidden!
 map <c-f> $lf -remote "send $id select '$(fzf)'"
 map J $lf -remote "send $id cd $(cut -d'	' -f2 ${XDG_CONFIG_HOME:-$HOME/.config}/directories | fzf)"
 map gh
@@ -73,7 +74,7 @@ map C copyto
 map M moveto
 map <c-n> push :mkdir<space>
 map <c-r> reload
-map <enter> shell
+map s shell
 map x $$f
 map X !$f
 map o open $f
@@ -89,3 +90,12 @@ map b bulkrename
 map <c-e> down
 map <c-y> up
 map V push :!nvim<space>
+map  <enter> open $f
+
+map g
+map gc cd ~/.config
+map gt cd ~/trabajo
+map gd cd ~/Descargas
+map gt cd ~/Descargas/transmission/Downloads
+map gi cd ~/Imágenes
+map gl cd ~/Descargas/libros

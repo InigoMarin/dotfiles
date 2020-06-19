@@ -24,6 +24,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias cdt='cd $HOME/trabajo'
 alias cdd='cd $HOME/Descargas'
+alias cdc='cd ~/.config'
 alias cp='cp -iv'
 
 
@@ -96,7 +97,7 @@ alias latexmkp='latexmk -pdf -pvc'
 # sudo apt install pandoc lynx
 
 mds() { pandoc $1 | w3m -T text/html;}
-rse() { fzf | xargs -I {} nvim '{}'; }
+rse() {du -a .| cut -f2 | fzf | xargs -I {} nvim '{}'; }
 rsi() {du . | cut -f2 | fzf | xargs -I {} sxiv '{}'; }
 rsv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf -m | xargs -I {} mpv '{}'; }
 rsvv() { du -a .| cut -f2 | grep  -e ".mp4$" -e ".mkv$" | sort | fzf -m | xargs -I {} vlc --playlist-enqueue '{}'; }
