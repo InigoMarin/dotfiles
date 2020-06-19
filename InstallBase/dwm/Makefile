@@ -1,4 +1,4 @@
-all: dependencies clipnotify clipmenu dwm st dwmblocks desktop clean
+all: dependencies clipnotify clipmenu dwm st dwmblocks pamixer desktop clean
 
 dependencies:
 	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev libxfixes-dev xsel -y
@@ -20,10 +20,14 @@ clipmenu:
 desktop:
 	sudo cp dwm-modified.desktop /usr/share/xsessions/
 	sudo cp dwm-start /usr/local/bin/
+pamixer:
+	sudo apt install libpulse-dev libboost-program-options-dev -y
+	git clone https://github.com/cdemoulins/pamixer.git && cd pamixer && sudo make install
 
 clean:
 	rm -fr dwm
 	rm -fr st
 	rm -fr dwmblocks
+	rm -fr pamixer
 	rm -fr clipnotify
 	rm -fr clipmenu
