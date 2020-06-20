@@ -26,6 +26,14 @@ cmd open ${{
     esac
 }}
 
+cmd xdgopen ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
 cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
 
 cmd delete ${{
@@ -63,22 +71,40 @@ cmd bulkrename ${{
     vidir
 }}
 
+
+# Bindings
+# Remove some defaults
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+map f
+
+
+cmd ex %ex "%f"
+
 # Bindings
 map . set hidden!
 map <c-f> $lf -remote "send $id select '$(fzf)'"
 map J $lf -remote "send $id cd $(cut -d'	' -f2 ${XDG_CONFIG_HOME:-$HOME/.config}/directories | fzf)"
 map gh
-map g top
+map H top
+map L bottom
 map D delete
+map p paste
+map x cut
+map y paste
+
 map C copyto
 map M moveto
 map <c-n> push :mkdir<space>
-map <c-r> reload
+map R reload
 map s shell
-map x $$f
-map X !$f
-map o open $f
-map O $mimeopen --ask $f
+map o xdgopen $f
 
 map A rename # at the very end
 map c push A<c-u> # new rename

@@ -87,6 +87,7 @@ install surfraw
 install gawk
 install xsel
 install dunst
+install j4-dmenu-desktop
 
 # MPD
 install mpd
