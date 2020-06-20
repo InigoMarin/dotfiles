@@ -38,6 +38,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tweekmonster/gofmt.vim'
+Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
@@ -176,3 +177,23 @@ autocmd BufWritePre * :call TrimWhitespace()
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Signify
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Change these if you want
+let g:signify_sign_add               = '+'
+let g:signify_sign_delete            = '_'
+let g:signify_sign_delete_first_line = '‾'
+let g:signify_sign_change            = '~'
+
+" I find the numbers disctracting
+let g:signify_sign_show_count = 0
+let g:signify_sign_show_text = 1
+
+
+" Jump though hunks
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)

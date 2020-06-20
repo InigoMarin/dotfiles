@@ -51,11 +51,22 @@ alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
 alias gs='git status'
 alias ga='git add -A'
 alias gp='git push origin HEAD'
-alias gd='git difftool'
+alias gd='diff --color --color-words --abbrev'
+alias gdt='git dif --cached'
+alias gdt='git difftool'
+alias gb='git branch'
+alias gbd="git branch -d"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gps='git push'
+alias gpl='git pull'
+alias gm='git merge'
+alias gr="git rebase"
 alias gc='git commit -m'
-alias gl='git log -n 20 --format="%ai  %Cgreen%h%Creset  %<(10,trunc)%aN  %s"'
-alias gsl='git log --decorate --graph --pretty=short'
-
+alias gl="git log --oneline --decorate --graph"
+alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+alias glga="git log -graph --oneline --all --decorate"
+alias grh='git reset --hard HEAD'
 
 # System
 alias bye='sudo shutdown -h now'
@@ -126,6 +137,20 @@ function fzf-lovely(){
         fi
 }
 
+fd() {
+  preview="git diff $@ --color=always -- {-1}"
+  git diff $@ --name-only | fzf -m --ansi --preview $preview
+}
+
+
+fdc() {
+  preview="git diff --cached  $@ --color=always -- {-1}"
+  git diff $@ --name-only | fzf -m --ansi --preview $preview
+}
+
+fp() {
+    fzf --preview 'bat {-1} --color=always'
+}
 
 # Set 'man' colors
 function man() {
