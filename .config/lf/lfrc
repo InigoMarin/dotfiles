@@ -119,9 +119,13 @@ map V push :!nvim<space>
 map  <enter> open $f
 
 map g
+map gh cd ~
 map gc cd ~/.config
 map gt cd ~/trabajo
-map gd cd ~/Descargas
-map gt cd ~/Descargas/transmission/Downloads
 map gi cd ~/Imágenes
+map gm cd ~/Música
+map gd cd ~/Descargas
 map gl cd ~/Descargas/libros
+map gs cd ~/Descargas/Series
+map gp cd ~/Descargas/Peliculas
+map gt cd ~/Descargas/transmission/Downloads
