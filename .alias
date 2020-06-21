@@ -152,6 +152,23 @@ fp() {
     fzf --preview 'bat {-1} --color=always'
 }
 
+# Select a docker container to start and attach to
+function dcstart() {
+  local cid
+  cid=$(docker ps -a | sed 1d | fzf -1 -q "$1" | awk '{print $1}')
+
+  [ -n "$cid" ] && docker start "$cid"
+}
+
+# Select a running docker container to stop
+function dcstop() {
+  local cid
+  cid=$(docker ps | sed 1d | fzf -q "$1" | awk '{print $1}')
+
+  [ -n "$cid" ] && docker stop "$cid"
+}
+
+
 # Set 'man' colors
 function man() {
     env \

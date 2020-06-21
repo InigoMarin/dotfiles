@@ -8,9 +8,15 @@ set scrolloff 10
 set color256 true
 set icons
 set period 1
+set drawbox true
+set icons true
+set ignorecase true
+
 
 # Vars that depend on environmental variables
-$lf -remote "send $id set previewer ${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope"
+#$lf -remote "send $id set previewer ${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope"
+set preview true
+set previewer ~/.local/bin/preview
 
 # cmds/functions
 cmd open ${{
@@ -71,6 +77,11 @@ cmd bulkrename ${{
     vidir
 }}
 
+cmd info ${{
+    clear;
+    st -e film.py -i $f
+}}
+
 
 # Bindings
 # Remove some defaults
@@ -85,7 +96,6 @@ map e
 map f
 
 
-cmd ex %ex "%f"
 
 # Bindings
 map . set hidden!
@@ -129,3 +139,7 @@ map gl cd ~/Descargas/libros
 map gs cd ~/Descargas/Series
 map gp cd ~/Descargas/Peliculas
 map gt cd ~/Descargas/transmission/Downloads
+
+
+
+map f info
