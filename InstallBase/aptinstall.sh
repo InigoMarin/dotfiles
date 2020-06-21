@@ -41,7 +41,6 @@ install googler
 install ddgr
 
 # Browser
-install chromium-browser
 install qutebrowser
 install firefox
 
@@ -88,6 +87,7 @@ install gawk
 install xsel
 install dunst
 install j4-dmenu-desktop
+install wmctrl
 
 # MPD
 install mpd
@@ -96,4 +96,3 @@ install mpc
 install python-mutagen
 install python3-mutagen
 install mpdris2
-
