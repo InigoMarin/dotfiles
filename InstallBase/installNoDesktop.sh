@@ -15,4 +15,4 @@ function install {
 
 install xorg
 install pulseaudio
-install lighdm
+install lightdm
