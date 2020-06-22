@@ -90,7 +90,7 @@ install dunst
 install j4-dmenu-desktop
 install mediainfo
 install wmctrl
-
+install build-essential
 # MPD
 install mpd
 install ncmpcpp
@@ -98,3 +98,4 @@ install mpc
 install python-mutagen
 install python3-mutagen
 install mpdris2
+
