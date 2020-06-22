@@ -1,5 +1,7 @@
 
 sudo apt install neovim -y
+sudo apt install nodejs -y
+sudo apt install yarnpkg -y
 
 echo "Install vim plug"
 
