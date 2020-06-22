@@ -1,5 +1,5 @@
 echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"' >> $HOME/.zshrc
-source ~/.zshrc
+source $HOME/.zshrc
 echo ".dotfiles" >> .gitignore
 git clone --bare https://www.github.com/InigoMarin/repo.git $HOME/.dotfiles
 dotfiles checkout

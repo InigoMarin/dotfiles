@@ -5,14 +5,12 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_STYLE_OVERRIDE=gtk2
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-# Prepare keyring
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets)
+xrandr -s 1920x1080
 
 # Start mpd service
 mpd /$HOME/.mpd/config &
 
 # Start polkit
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # Start compton
 #compton --config ~/.config/compton/config &

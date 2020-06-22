@@ -31,6 +31,7 @@ install pandoc
 install w3m
 install ripgrep
 install pulsemixer
+install newsboat
 install youtube-dl
 install task-spooler
 install pass
