@@ -42,14 +42,14 @@ highlight feedlist "TORRENT: .*" cyan default
 
 text-width 80
 
-browser "qutebrowser"
-macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser "qutebrowser"
-macro t set browser "transadd %u"; open-in-browser ; set browser "qutebrowser"
-macro w set browser "w3m %u"; open-in-browser ; set browser "qutebrowser"
-macro c set browser "chromium %u"; open-in-browser ; set browser "qutebrowser"
-macro i set browser "imdb"; open-in-browser ; set browser "qutebrowser"
-macro r set browser "tuir %u"; open-in-browser ; set browser "qutebrowser"
-macro f set browser "filmaffinity"; open-in-browser ; set browser "qutebrowser"
+browser $BROWSER
+macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser $BROWSER
+macro t set browser "transadd %u"; open-in-browser ; set browser $BROWSER
+macro w set browser "w3m %u"; open-in-browser ; set browser $BROWSER
+macro c set browser "qutebrowser %u"; open-in-browser ; set browser $BROWSER
+macro i set browser "imdb"; open-in-browser ; set browser $BROWSER
+macro r set browser "tuir %u"; open-in-browser ; set browser  $BROWSER
+macro f set browser "filmaffinity"; open-in-browser ; set browser $BROWSER
 
 #------------------------------------
 #Install dependecies"
@@ -57,9 +57,9 @@ macro f set browser "filmaffinity"; open-in-browser ; set browser "qutebrowser"
 #sudo apt-get install youtube-dl
 #------------------------------------
 
-macro d set browser "tsp youtube-dl –add-metadata -ic"; open-in-browser ; set browser "qutebrowser"
-macro m set browser "tsp youtube-dl –add-metadata -xic"; open-in-browser ; set browser "qutebrowser"
-macro M set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser "qutebrowser"
+macro d set browser "tsp youtube-dl –add-metadata -ic"; open-in-browser ; set browser $BROWSER
+macro m set browser "tsp youtube-dl –add-metadata -xic"; open-in-browser ; set browser $BROWSER
+macro M set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser $BROWSER
 
 download-path   "~/Descargas/rss/%n"
 save-path       "~/Descargas/rss"
