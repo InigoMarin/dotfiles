@@ -39,7 +39,7 @@ alias ls='ls --color=auto'
 alias h='history'
 alias hs='history | grep'
 alias q='exit'
-alias setbg='feh --bg-fill --randomize $HOME/wallpapers/*'
+#alias setbg='feh --bg-fill --randomize $HOME/wallpapers/*'
 
 # Diff
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
@@ -72,6 +72,7 @@ alias upgrade='sudo apt-get upgrade'
 alias updatepis='ansible pi -u pi -m apt -a "upgrade=yes update_cache=yes" -b'
 alias clean='sudo apt-get autoclean && sudo apt-get autoremove'
 alias up='wakeonlan 94:18:82:37:97:20'
+alias vps='ssh ubuntu@maringarcia.xyz'
 
 # Python
 alias ve='python3 -m venv ./venv'
