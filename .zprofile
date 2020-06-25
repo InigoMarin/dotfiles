@@ -5,3 +5,5 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="brave-browser-stable"
 
+export _JAVA_AWT_WM_NONREPARENTING=1	# Fix for Java applications in dwm
+
