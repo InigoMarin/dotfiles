@@ -91,6 +91,8 @@ install j4-dmenu-desktop
 install mediainfo
 install wmctrl
 install build-essential
+install cmus
+
 # MPD
 install mpd
 install ncmpcpp
