@@ -1,0 +1,52 @@
+#!/bin/bash
+
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+
+
+#===  FUNCTION  ================================================================
+#         NAME:  usage
+#  DESCRIPTION:  Display usage information.
+#===============================================================================
+function usage ()
+{
+    echo "Usage :  $0 [options] [--]
+
+    Options:
+    -h    Display this message
+    -p    Display script version"
+
+}    # ----------  end of function usage  ----------
+
+#-----------------------------------------------------------------------
+#  Handle command line arguments
+#-----------------------------------------------------------------------
+
+while getopts ":h:p" opt;
+do
+  case ${opt} in
+
+    h)  usage; exit 0   ;;
+    p)
+
+        list=$(du -a . | grep -e ".mp3$" -e ".mkv$" -e ".avi$" -e ".mov$" -e ".mpg$" -e ".mpeg$"  | cut -f2 | fzf -m -e --preview 'mediainfo {}')
+
+        for video in $list
+        do
+            mpv -mute $video &
+        done
+        exit 0;;
+
+    * )  echo -e "\n  Option does not exist : OPTARG\n"
+                usage; exit 1   ;;
+
+  esac    # --- end of case ---
+done
+shift $((OPTIND-1))
+echo $command
+
+
+du -a . | grep -e ".mp3$" -e ".mkv$" -e ".avi$" -e ".mov$" -e ".mpg$" -e ".mpeg$"  | cut -f2 | fzf -m -e --preview 'mediainfo {}' | xargs -I {} mpv '{}'
+
+
