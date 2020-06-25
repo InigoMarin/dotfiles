@@ -92,7 +92,8 @@ install mediainfo
 install wmctrl
 install build-essential
 install cmus
-
+install w3m-img
+install imagemagick
 # MPD
 install mpd
 install ncmpcpp
