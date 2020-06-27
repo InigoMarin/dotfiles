@@ -4,3 +4,8 @@ id_rsa*
 *.pub
 .aws
 .bash_history
+.vim
+*.swp
+*.swo
+*.swo
+

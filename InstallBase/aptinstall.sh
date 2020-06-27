@@ -36,6 +36,7 @@ install youtube-dl
 install task-spooler
 install pass
 install locate
+install net-tools
 # Console web searcher
 
 install googler
