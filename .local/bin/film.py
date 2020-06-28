@@ -1,15 +1,19 @@
 #!/usr/bin/python3
 
-import sys, getopt, os
+import sys
+import getopt
+import os
 from imdb import IMDb
+
 
 def film_info(film):
     ia = IMDb()
-    print("Searching Film:",film)
+    print("Searching Film:", film)
     movies = ia.search_movie(film)
 
     movie = movies[0]
-    ia.update(movie, ['technical','vote details','reviews','critic reviews','main','plot'])
+    ia.update(movie, ['technical', 'vote details',
+                      'reviews', 'critic reviews', 'main', 'plot'])
     print(movie.get('title'))
     print(movie.get('year'))
     print("Genres:")
@@ -25,33 +29,31 @@ def film_info(film):
     print("Synopsis:")
     print(movie.get('plot')[0])
 
+
 def main():
     film = ''
     try:
-        opts, args = getopt.getopt(sys.argv[1:],"hi:v",["help", "info="])
+        opts, args = getopt.getopt(sys.argv[1:], "hi:v", ["help", "info="])
     except getopt.GetoptError as err:
         print(err)
         print('film.py -i <film>')
         sys.exit(2)
     for o, a in opts:
-        if o=='-h':
+        if o == '-h':
             print('film -i <film>')
             sys.exit()
-        elif o in ("-i","--info"):
+        elif o in ("-i", "--info"):
             film = a
-            head, tail= os.path.split(film)
+            head, tail = os.path.split(film)
             film = tail
             pos = film.find("[")
-            if pos>0:
+            if pos > 0:
                 film = film[0:pos-1]
         else:
-            assert False,"error"
+            assert False, "error"
         film_info(film)
         input("")
 
+
 if __name__ == "__main__":
     main()
-
-
-
-
