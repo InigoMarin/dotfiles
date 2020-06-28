@@ -90,6 +90,8 @@ let g:vrfr_rg = 'true'
 let g:netrw_banner = 0
 let g:netrw_winsize = 25
 
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -102,6 +104,7 @@ nnoremap <Leader>pf :Files<CR>
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
+nnoremap <Leader>rp :resize 100<CR>
 nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -123,6 +126,7 @@ inoremap <silent><expr> <TAB>
             \ <SID>check_back_space() ? "\<TAB>" :
             \ coc#refresh()
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <silent><expr> <C-space> coc#refresh()
 
@@ -134,8 +138,8 @@ nmap <leader>gr <Plug>(coc-references)
 nmap <leader>rr <Plug>(coc-rename)
 nmap <leader>g[ <Plug>(coc-diagnostic-prev)
 nmap <leader>g] <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>gn <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>cr :CocRestart
 
 " Snippers configuration coc-snippets
@@ -166,6 +170,11 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+augroup highlight_yank
+    autocmd!
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 50)
+augroup END
 
 autocmd BufWritePre * :call TrimWhitespace()
 
