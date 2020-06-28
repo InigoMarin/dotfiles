@@ -1,3 +1,4 @@
 {
     "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+    "coc.preferences.formatOnSaveFiletypes": ["python"]
 }
