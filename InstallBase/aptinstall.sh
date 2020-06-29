@@ -99,7 +99,9 @@ install imagemagick
 install mpd
 install ncmpcpp
 install mpc
-install python-mutagen
 install python3-mutagen
 install mpdris2
 
+# KODI
+install kodi
+install kodi-pvr-hts
