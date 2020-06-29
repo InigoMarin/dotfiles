@@ -7,22 +7,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 xrandr -s 1920x1080
 
-# Start mpd service
-mpd /$HOME/.mpd/config &
-
-# Start polkit
-
-# Start compton
-#compton --config ~/.config/compton/config &
-compton &
-
-# Start notification daemon
-dunst &
-
-
-# Set wallpaper
-#feh --bg-fill $HOME/wallpapers/juego-de-tronos1.jpg &
-feh --bg-fill --randomize $HOME/wallpapers/* &
 
 dwmblocks &
 exec /usr/local/bin/dwm
