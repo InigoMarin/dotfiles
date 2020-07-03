@@ -160,8 +160,8 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 
 " Sweet Sweet FuGITive
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR>
 nmap <leader>gs :G<CR>
 nmap <leader>gc :Gcommit<CR>
 
@@ -206,3 +206,6 @@ let g:signify_sign_show_text = 1
 " Jump though hunks
 nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
+
+" Terminal neovim
+tnoremap <Esc> <C-\><C-n>
