@@ -73,9 +73,6 @@ install fortunes
 install fortunes-es
 install fortunes-es-off
 
-# Games
-install steam
-
 # DWM
 install feh
 install suckless-tools
@@ -96,6 +93,7 @@ install cmus
 install w3m-img
 install imagemagick
 install calcurse
+install libnotify-bin
 # MPD
 install mpd
 install ncmpcpp
