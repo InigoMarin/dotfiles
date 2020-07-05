@@ -95,6 +95,7 @@ install build-essential
 install cmus
 install w3m-img
 install imagemagick
+install calcurse
 # MPD
 install mpd
 install ncmpcpp
