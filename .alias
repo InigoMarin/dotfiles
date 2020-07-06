@@ -44,7 +44,7 @@ alias q='exit'
 # Diff
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
 
-# Git
+# Git Mios
 alias gs='git status'
 alias ga='git add -A'
 alias gp='git push origin HEAD'
@@ -77,6 +77,7 @@ alias vps='ssh ubuntu@maringarcia.xyz'
 # Python
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
+alias web='python3 -m http.server'
 
 
 # Spring Boot
