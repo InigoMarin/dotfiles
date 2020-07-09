@@ -1,0 +1,97 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/ima/
+	..
+1594299607
+'b
+	/home/ima/bin/
+	..
+1594299607
+'h
+	/home/ima/
+	..
+1594299607
+'z
+	/home/ima/.config/vifm
+	..
+1594299607
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/ima/.config
+	..
+0
+d/home/ima
+	Imágenes
+6
+d/home/ima/Imágenes
+	Captura de pantalla de 2019-11-05 20-59-46.png
+8
+d/home/ima
+	Imágenes
+6
+d/home/ima/Imágenes
+	Wallpapers
+5
+d/home/ima/Imágenes/Wallpapers
+	..
+0
+d/home/ima/Imágenes
+	Cámarap30
+2
+d/home/ima/Imágenes/Cámarap30
+	Camera
+1
+d/home/ima/Imágenes/Cámarap30/Camera
+	IMG_20190719_164023.jpg
+4
+d/home/ima/Imágenes/Cámarap30
+	Camera
+1
+d/home/ima/Imágenes
+	Captura de pantalla de 2019-11-05 20-59-46.png
+8
+d
+
+# Right window history (oldest to newest):
+D/home/ima/.config
+	..
+0
+D
+
+# Command line history (oldest to newest):
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0
