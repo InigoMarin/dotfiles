@@ -137,6 +137,10 @@ lfcd () {
     fi
 }
 
+# Activate vimode
+bindkey -v
+
+
 bindkey -s '^o' 'lfcd\n'
 
 bindkey -s '^a' 'bc -l\n'
