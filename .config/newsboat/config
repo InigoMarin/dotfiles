@@ -76,3 +76,15 @@ bind-key k up
 confirm-exit no
 cleanup-on-quit yes
 
+
+
+## - ttrss access -----
+
+#urls-source "ttrss"
+#ttrss-url ""
+#ttrss-login ""
+#ttrss-password ""
+
+# -- shortcuts -----
+#ttrss-flag-star "s"
+#ttrss-flag-publish "p"
