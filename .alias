@@ -110,7 +110,7 @@ mds() { pandoc $1 | w3m -T text/html;}
 rse() { du -a .| cut -f2 | fzf | xargs -I {} nvim '{}'; }
 rsi() { du . | cut -f2 | fzf | xargs -I {} sxiv '{}'; }
 rspdf() { du -a .| cut -f2 | grep  -e ".pdf$" | fzf | xargs -I {} zathura '{}'; }
-
+tv() { more ~/.config/canales.tv | fzf -d ";" --nth=1 --with-nth=1 -e | cut -f2 -d ";" | xargs -I{} mpv '{}'; }
 # fzf improvement
 function fzf-lovely(){
 
