@@ -58,6 +58,7 @@ Plug '/home/mpaulson/personal/vim-be-good'
 
 Plug 'chrisbra/colorizer'
 Plug 'vimwiki/vimwiki'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()
 
 let g:gruvbox_contrast_dark = 'hard'
@@ -102,6 +103,7 @@ let g:netrw_winsize = 25
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>pl :<C-u>CocList diagnostics<cr>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -225,3 +227,15 @@ nmap <leader>gk <plug>(signify-prev-hunk)
 
 " Terminal neovim
 tnoremap <Esc> <C-\><C-n>
+
+
+
+" Coc-install coc-actions
+" Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+
