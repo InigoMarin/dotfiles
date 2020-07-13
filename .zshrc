@@ -151,3 +151,9 @@ bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/ima/.sdkman"
 [[ -s "/home/ima/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ima/.sdkman/bin/sdkman-init.sh"
+
+export ANDROID_HOME="/home/ima/Android/Sdk"
+# Dart and flutter path add
+export PATH="$PATH:/usr/lib/dart/bin"
+export PATH="$PATH:/home/ima/flutter/bin"
+
