@@ -1,3 +1,6 @@
+
+# Activate vimode
+bindkey -v
 # Start configuration added by Zim install {{{
 #
 # User configuration sourced by interactive shells
@@ -137,8 +140,6 @@ lfcd () {
     fi
 }
 
-# Activate vimode
-bindkey -v
 
 
 bindkey -s '^o' 'lfcd\n'
