@@ -86,7 +86,7 @@ alias web='python3 -m http.server'
 alias sbr='mvn spring-boot:run'
 alias sbs='mvn spring-boot:start'
 alias sps='mvn spring-boot:stop'
-
+alias sbb='mvn spring-boot:build-image'
 
 # Extra
 #alias config='nvim /home/imarin/.config/i3/config'
