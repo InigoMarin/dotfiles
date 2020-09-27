@@ -11,6 +11,7 @@ alias np='newsboat -u ~/.config/newsboatp/urls -c ~/.config/newsboatp/cache.db -
 alias t='tremc'
 alias v='nvim'
 alias vim='nvim'
+alias d='docker'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -84,7 +85,7 @@ alias web='python3 -m http.server'
 
 alias sbr='mvn spring-boot:run'
 alias sbs='mvn spring-boot:start'
-alias sps='mvn sprinng-boot:stop'
+alias sps='mvn spring-boot:stop'
 
 
 # Extra
