@@ -23,7 +23,6 @@ install unrar
 install unzip
 install p7zip
 install wakeonlan
-install synaptic
 install pandoc
 install w3m
 install newsboat
@@ -97,6 +96,7 @@ install fortunes-es-off
 
 # DWM
 install lxappearance
+install synaptic
 install feh
 install suckless-tools
 install compton
