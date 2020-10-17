@@ -1,5 +1,5 @@
 
-alias domusa='sudo openvpn --config /home/ima/domusa.ovpn'
+alias vpn='sudo openvpn --config /home/ima/ima.ovpn'
 alias pcinf11='rdesktop -r disk:test=/home/ima/Descargas -u ima -d samudo.local -g 1280x720 10.0.17.100'
 alias vmtc1='rdesktop -r5 -r disk:test=/home/ima/Descargas -z 10.0.100.25 -f -u admintc -d vmtc1 -g 1920x1080'
 alias montar='sudo mount 192.168.1.21:/media/prot_data /mnt/prot'
