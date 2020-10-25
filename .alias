@@ -14,7 +14,7 @@ alias vim='nvim'
 alias d='docker'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
+alias kubectl='sudo microk8s.kubectl'
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..='cd ..'
 alias ...='cd ../..'
