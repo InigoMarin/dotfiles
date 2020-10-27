@@ -107,9 +107,6 @@ let g:go_highlight_format_strings = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_auto_sameids = 1
 
-let g:vim_be_good_log_file = 1
-let g:vim_apm_log = 1
-
 colorscheme gruvbox
 set background=dark
 
@@ -205,21 +202,26 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 lua require'nvim_lsp'.tsserver.setup{ on_attach=require'completion'.on_attach }
+lua require'nvim_lsp'.omnisharp.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.jdtls.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.pyls.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.dockerls.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.html.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.cssls.setup{ on_attach=require'completion'.on_attach }
 lua require'nvim_lsp'.jsonls.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.texlab.setup{ on_attach=require'completion'.on_attach }
+" lua require'nvim_lsp'.texlab.setup{ on_attach=require'completion'.on_attach }
 " lua require'nvim_lsp'.sumneko_lua.setup{ on_attach=require'completion'.on_attach }
 
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
+
+" Commentry
+nnoremap <leader>/ :Commentary<CR>
+vnoremap <leader>/ :Commentary<CR>
 
 " Terminal commands
 " ueoa is first through fourth finger left hand home row.
