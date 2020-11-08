@@ -31,7 +31,8 @@ let g:coc_global_extensions = [
 	\ 'coc-git',
 	\ 'coc-highlight',
 	\ 'coc-markdownlint',
-	\ 'coc-python'
+	\ 'coc-python',
+	\ 'coc-java'
 \]
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -262,7 +263,7 @@ au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "                                   vim viki                                   "
 "------------------------------------------------------------------------------"
 Plug 'vimwiki/vimwiki'
-let g:vimwiki_list = [{'path': '~/workspace/wiki',  'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/vimwiki',  'syntax': 'markdown', 'ext': '.md'}]
 
 
 "------------------------------------------------------------------------------"
