@@ -1,314 +1,465 @@
-syntax on
-filetype plugin indent on
-
-set guicursor=
-set relativenumber
-set nohlsearch
-set hidden
-set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
-set expandtab
-set smartindent
-set nu
-set nowrap
-set smartcase
-set noswapfile
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
-set incsearch
-set termguicolors
-set scrolloff=8
-set noshowmode
-set completeopt=menuone,noinsert,noselect
-set signcolumn=yes
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=50
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
-set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
-
-call plug#begin('~/.vim/plugged')
-
-" Neovim lsp Plugins
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-lua/completion-nvim'
-Plug 'honza/vim-snippets'
-Plug 'SirVer/ultisnips'
-Plug 'tjdevries/nlua.nvim'
-Plug 'tjdevries/lsp_extensions.nvim'
-Plug 'rust-lang/rust.vim'
-Plug 'tweekmonster/gofmt.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'vim-utils/vim-man'
-Plug 'mbbill/undotree'
-Plug 'sheerun/vim-polyglot'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'stsewd/fzf-checkout.vim'
-Plug 'vuciv/vim-bujo'
-Plug 'tpope/vim-dispatch'
-
-" Plug '/home/mpaulson/personal/vim-apm'
-" Plug 'theprimeagen/vim-be-good'
-Plug 'gruvbox-community/gruvbox'
-
-" telescope requirements...
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-lua/telescope.nvim'
-
-"  I AM SO SORRY FOR DOING COLOR SCHEMES IN MY VIMRC, BUT I HAVE
-"  TOOOOOOOOOOOOO
-
-Plug 'colepeters/spacemacs-theme.vim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/base16-vim'
-
-call plug#end()
-
-
-let g:gruvbox_contrast_dark = 'hard'
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-endif
-let g:gruvbox_invert_selection='0'
-
-" telescope
-let g:telescope_cache_results = 1
-let g:telescope_prime_fuzzy_find  = 1
-
-" --- vim go (polyglot) settings.
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_types = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_generate_tags = 1
-let g:go_highlight_format_strings = 1
-let g:go_highlight_variable_declarations = 1
-let g:go_auto_sameids = 1
-
-colorscheme gruvbox
-set background=dark
-
-if executable('rg')
-    let g:rg_derive_root='true'
-endif
-
-let loaded_matchparen = 1
+set shell=/bin/zsh
 let mapleader = ","
 
-let g:netrw_browse_split = 2
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
-let g:netrw_localrmdir='rm -r'
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                                VIM PLUG START                                "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+nmap <C-p> :Buffer<CR>
+call plug#begin('~/.vim/plugged')
 
-let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
-let $FZF_DEFAULT_OPTS='--reverse'
-let g:fzf_branch_actions = {
-      \ 'rebase': {
-      \   'prompt': 'Rebase> ',
-      \   'execute': 'echo system("{git} rebase {branch}")',
-      \   'multiple': v:false,
-      \   'keymap': 'ctrl-r',
-      \   'required': ['branch'],
-      \   'confirm': v:false,
+
+"------------------------------------------------------------------------------"
+"                                   nvim yarp                                  "
+"------------------------------------------------------------------------------"
+Plug 'roxma/nvim-yarp'
+
+
+"------------------------------------------------------------------------------"
+"                                   coc nvim                                   "
+"------------------------------------------------------------------------------"
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+	\ 'coc-tslint-plugin', 
+	\ 'coc-tsserver', 
+	\ 'coc-python', 
+	\ 'coc-emmet', 
+	\ 'coc-css',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-yank',
+	\ 'coc-prettier',
+	\ 'coc-git',
+	\ 'coc-highlight',
+	\ 'coc-markdownlint',
+	\ 'coc-python'
+\]
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+set nobackup
+set nowritebackup
+set cmdheight=2
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
+
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
+" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+inoremap <silent><expr> <C-j>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><C-k> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+nmap <silent> [c <Plug>(coc-diagnostic-prev)
+nmap <silent> ]c <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+command! -nargs=0 Format 	:call 		CocAction('format')
+command! -nargs=? Fold 		:call 		CocAction('fold', <f-args>)
+command! -nargs=0 OR   		:call		CocAction('runCommand', 'editor.action.organizeImport')
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
       \ },
-      \ 'track': {
-      \   'prompt': 'Track> ',
-      \   'execute': 'echo system("{git} checkout --track {branch}")',
-      \   'multiple': v:false,
-      \   'keymap': 'ctrl-t',
-      \   'required': ['branch'],
-      \   'confirm': v:false,
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
       \ },
-      \}
-" lua require('telescope').setup({defaults = {file_matching_strategy = "prime" }})
+      \ }
 
-nnoremap <leader>vd :lua vim.lsp.buf.definition()<CR>
-nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
-nnoremap <leader>vsh :lua vim.lsp.buf.signature_help()<CR>
-nnoremap <leader>vrr :lua vim.lsp.buf.references()<CR>
-nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>
-nnoremap <leader>vh :lua vim.lsp.buf.hover()<CR>
-nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>
-nnoremap <leader>vsd :lua vim.lsp.util.show_line_diagnostics(); vim.lsp.util.show_line_diagnostics()<CR>
-
-nnoremap <leader>gc :GBranches<CR>
-nnoremap <leader>ga :Git fetch --all<CR>
-nnoremap <leader>grum :Git rebase upstream/master<CR>
-nnoremap <leader>grom :Git rebase origin/master<CR>
-nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
-nnoremap <leader>pb :lua require('telescope.builtin').buffers()<CR>
-nnoremap <leader>bs /<C-R>=escape(expand("<cWORD>"), "/")<CR><CR>
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>u :UndotreeShow<CR>
-nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
-nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For >")})<CR>
-nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
-nnoremap <Leader>pf :Files<CR>
-nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
-nnoremap <Leader>+ :vertical resize +5<CR>
-nnoremap <Leader>- :vertical resize -5<CR>
-nnoremap <Leader>rp :resize 100<CR>
-nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
-
-" greatest remap ever
-vnoremap <leader>p "_dP
-
-" vim TODO
-nmap <Leader>tu <Plug>BujoChecknormal
-nmap <Leader>th <Plug>BujoAddnormal
-let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
-
-nnoremap <Leader>ww ofunction wait(ms: number): Promise<void> {<CR>return new Promise(res => setTimeout(res, ms));<CR>}<esc>k=i{<CR>
-
-" Vim with me
-nnoremap <leader>vwm :colorscheme gruvbox<bar>:set background=dark<CR>
-nmap <leader>vtm :highlight Pmenu ctermbg=gray guibg=gray
-
-inoremap <C-c> <esc>
-
-let g:completion_enable_snippet = 'UltiSnips'
-let g:UltiSnipsExpandTrigger="<C-l>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-lua require'nvim_lsp'.tsserver.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.omnisharp.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.jdtls.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.pyls.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.clangd.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.gopls.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.rust_analyzer.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.dockerls.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.html.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.cssls.setup{ on_attach=require'completion'.on_attach }
-lua require'nvim_lsp'.jsonls.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.texlab.setup{ on_attach=require'completion'.on_attach }
-" lua require'nvim_lsp'.sumneko_lua.setup{ on_attach=require'completion'.on_attach }
-
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
-nmap <leader>gs :G<CR>
-
-" Commentry
-nnoremap <leader>/ :Commentary<CR>
-vnoremap <leader>/ :Commentary<CR>
-
-" Terminal commands
-" ueoa is first through fourth finger left hand home row.
-" This just means I can crush, with opposite hand, the 4 terminal positions
-nmap <leader>tu :call GotoBuffer(0)<CR>
-nmap <leader>te :call GotoBuffer(1)<CR>
-nmap <leader>to :call GotoBuffer(2)<CR>
-nmap <leader>ta :call GotoBuffer(3)<CR>
-
-nmap <leader>tsu :call SetBuffer(0)<CR>
-nmap <leader>tse :call SetBuffer(1)<CR>
-nmap <leader>tso :call SetBuffer(2)<CR>
-nmap <leader>tsa :call SetBuffer(3)<CR>
-
-fun! EmptyRegisters()
-    let regs=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
-    for r in regs
-        call setreg(r, [])
-    endfor
-endfun
-
-fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
-endfun
-
-" ES
-com! W w
-
-fun! ThePrimeagen_LspHighlighter()
-    lua print("Testing")
-    lua package.loaded["my_lspconfig"] = nil
-    lua require("my_lspconfig")
-endfun
-
-fun! GotoBuffer(ctrlId)
-    if (a:ctrlId > 9) || (a:ctrlId < 0)
-        echo "CtrlID must be between 0 - 9"
-        return
-    end
-
-    let contents = g:win_ctrl_buf_list[a:ctrlId]
-    if type(l:contents) != v:t_list
-        echo "Nothing There"
-        return
-    end
-
-    let bufh = l:contents[1]
-    call nvim_win_set_buf(0, l:bufh)
-endfun
-
-" How to do this but much better?
-let g:win_ctrl_buf_list = [0, 0, 0, 0]
-fun! SetBuffer(ctrlId)
-    if has_key(b:, "terminal_job_id") == 0
-        echo "You must be in a terminal to execute this command"
-        return
-    end
-    if (a:ctrlId > 9) || (a:ctrlId < 0)
-        echo "CtrlID must be between 0 - 9"
-        return
-    end
-
-    let g:win_ctrl_buf_list[a:ctrlId] = [b:terminal_job_id, nvim_win_get_buf(0)]
-endfun
-
-fun! SendTerminalCommand(ctrlId, command)
-    if (a:ctrlId > 9) || (a:ctrlId < 0)
-        echo "CtrlID must be between 0 - 9"
-        return
-    end
-    let contents = g:win_ctrl_buf_list[a:ctrlId]
-    if type(l:contents) != v:t_list
-        echo "Nothing There"
-        return
-    end
-
-    let job_id = l:contents[0]
-    call chansend(l:job_id, a:command)
-endfun
-
-com! SetLspVirtualText call ThePrimeagen_LspHighlighter()
-
-augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
-augroup END
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
+"------------------------------------------------------------------------------"
+"                                vim javascript                                "
+"------------------------------------------------------------------------------"
+Plug 'pangloss/vim-javascript'
+
+
+"------------------------------------------------------------------------------"
+"                                    vim tsx                                   "
+"------------------------------------------------------------------------------"
+Plug 'ianks/vim-tsx'
+
+
+"------------------------------------------------------------------------------"
+"                                typescript vim                                "
+"------------------------------------------------------------------------------"
+Plug 'leafgarland/typescript-vim'
+
+
+"------------------------------------------------------------------------------"
+"                                      fzf                                     "
+"------------------------------------------------------------------------------"
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" ignore files and folders in git ignore
+command! FZFGitIgnore call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standard --others --cached'}))
+nmap <C-p> :FZFGitIgnore <CR>
+imap <C-p> <Esc>:FZFGitIgnore <CR>
+nmap <C-B> :Buffers <CR>
+nnoremap <C-L> :Lines <CR>
+nmap <Leader>fzl <Esc>:Lines<CR>
+nmap <Leader>fzb <Esc>:Buffers<CR>
+nmap <Leader>fzc <Esc>:Commits<CR>
+
+
+"------------------------------------------------------------------------------"
+"                                  vim ariline                                 "
+"------------------------------------------------------------------------------"
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 0
+let g:airline_statusline_ontop=1
+let g:airline_detect_modified=1
+let g:airline_theme = 'bubblegum'
+let g:airline_powerline_fonts = 1
+let g:airline_disable_statusline = 0
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
+let g:airline#extensions#coc#enabled = 1
+let airline#extensions#coc#error_symbol = 'E:'
+let airline#extensions#coc#warning_symbol = 'W:'
+let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
+let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
+
+let g:airline#extensions#wordcount#enabled = 0
+
+
+"------------------------------------------------------------------------------"
+"                                 vim surround                                 "
+"------------------------------------------------------------------------------"
+Plug 'tpope/vim-surround'
+
+
+
+"------------------------------------------------------------------------------"
+"                             vim multiple cursors                             "
+"------------------------------------------------------------------------------"
+Plug 'terryma/vim-multiple-cursors'
+
+
+
+"------------------------------------------------------------------------------"
+"                                   emmet vim                                  "
+"------------------------------------------------------------------------------"
+Plug 'mattn/emmet-vim'
+
+
+"------------------------------------------------------------------------------"
+"                                 vim gitgutter                                "
+"------------------------------------------------------------------------------"
+" vim gitgutter blocks the coc-nvim languale server validations in the editor
+" Plug 'airblade/vim-gitgutter'
+
+
+"------------------------------------------------------------------------------"
+"                                  delimitMate                                 "
+"------------------------------------------------------------------------------"
+Plug 'Raimondi/delimitMate'
+
+
+"------------------------------------------------------------------------------"
+"                                nerd commenter                                "
+"------------------------------------------------------------------------------"
+Plug 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDAltDelims_java = 1
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDToggleCheckAllLines = 1
+
+
+"------------------------------------------------------------------------------"
+"                                 comment frame                                "
+"------------------------------------------------------------------------------"
+Plug 'cometsong/CommentFrame.vim'
+
+
+"------------------------------------------------------------------------------"
+"                                   nerd tree                                  "
+"------------------------------------------------------------------------------"
+Plug 'scrooloose/nerdtree'
+let NERDTreeMapOpenInTab='<Leader>ntt'
+nnoremap <Leader>nt :NERDTree<CR>
+nnoremap <Leader>ntf :NERDTreeFocus<CR>
+nnoremap <Leader>1 :NERDTreeFocus<CR>
+nnoremap <Leader>ntr :NERDTreeRefreshRoot<CR>
+au StdinReadPre * let s:std_in=1
+au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+
+"------------------------------------------------------------------------------"
+"                                   vim viki                                   "
+"------------------------------------------------------------------------------"
+Plug 'vimwiki/vimwiki'
+let g:vimwiki_list = [{'path': '~/workspace/wiki',  'syntax': 'markdown', 'ext': '.md'}]
+
+
+"------------------------------------------------------------------------------"
+"                                   auto save                                  "
+"------------------------------------------------------------------------------"
+Plug '907th/vim-auto-save'
+let g:auto_save = 0
+let g:auto_save_events = ["InsertLeave", "TextChanged"]
+
+
+"------------------------------------------------------------------------------"
+"                                    scalpel                                   "
+"------------------------------------------------------------------------------"
+Plug 'wincent/scalpel'
+
+
+"------------------------------------------------------------------------------"
+"                                  auto pairs                                  "
+"------------------------------------------------------------------------------"
+Plug 'jiangmiao/auto-pairs'
+
+
+"------------------------------------------------------------------------------"
+"                                 vim startify                                 "
+"------------------------------------------------------------------------------"
+" Plug 'mhinz/vim-startify'
+
+
+"------------------------------------------------------------------------------"
+"                                 smooth scroll                                "
+"------------------------------------------------------------------------------"
+Plug 'psliwka/vim-smoothie'
+
+
+"------------------------------------------------------------------------------"
+"                                  quick scope                                 "
+"------------------------------------------------------------------------------"
+Plug 'unblevable/quick-scope'
+
+
+"------------------------------------------------------------------------------"
+"                                    themes                                    "
+"------------------------------------------------------------------------------"
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-colorscheme-switcher'
+let g:colorscheme_switcher_keep_background=1
+
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'tomasiser/vim-code-dark'
+
+call plug#end()
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                                 VIM PLUG END                                 "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
+
+
+
+
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                                AUTO CMD START                                "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+" au BufNewFile,BufRead *.ts setlocal filetype=typescript
+" au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                                 AUTO CMD END                                 "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
+
+
+
+
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                              VIM DEFAULTS START                              "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+" color theme
+colorscheme OceanicNext
+set background=dark
+
+set number
+set relativenumber
+
+" cursor
+let &t_SI.="\e[6 q" "SI = INSERT mode
+let &t_SR.="\e[4 q" "SR = REPLACE mode
+let &t_EI.="\e[2 q" "EI = NORMAL mode (ELSE)
+
+" code folding
+set foldmethod=syntax
+" set foldlevelstart=-1
+set nofoldenable
+
+set spelllang=en
+
+set shiftwidth=4
+set tabstop=4
+
+set incsearch
+set ignorecase
+set smartcase 
+
+set formatoptions-=ro
+
+set mouse=a
+
+set splitbelow
+set splitright
+
+set scrolloff=10
+
+" turn off status line
+set laststatus=0
+
+
+" replace yanked word
+" binds: cpw, cpi(
+nnoremap <silent> cp :let g:substitutemotion_reg = v:register
+            \ <bar> set opfunc=SubstituteMotion<CR>g@
+
+function! SubstituteMotion(type, ...)
+	let l:reg = g:substitutemotion_reg
+	if a:0
+		silent exe "normal! `<" . a:type . "`>\"_c\<c-r>" . l:reg . "\<esc>"
+	elseif a:type == 'line'
+		silent exe "normal! '[V']\"_c\<c-r>" . l:reg . "\<esc>"
+	elseif a:type == 'block'
+		silent exe "normal! `[\<C-V>`]\"_c\<c-r>" . l:reg . "\<esc>"
+	else
+		silent exe "normal! `[v`]\"_c\<c-r>" . l:reg . "\<esc>"
+	endif
+endfunction
+
+
+set t_Co=256
+set nohlsearch
+syntax on
+
+" set paste is removed because it disable the coc autocompletion
+" set paste
+
+set fillchars+=vert:\|
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                               VIM DEFAULTS END                               "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+
+
+
+
+
+
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                                KEY BINDS START                               "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+" go normal mode
+imap <silent> jk <Esc>
+
+" save
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+
+" quit
+nmap <c-q> :q<CR>
+imap <c-q> <Esc>:q<CR>
+
+" move line up and down
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
+
+" move between split views
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" auto close bracket
+" inoremap {<cr> {<cr>}<c-o>O
+" inoremap {<cr> {<cr>}<c-o>O
+" inoremap [<cr> [<cr>]<c-o>O<tab>
+" inoremap (<cr> (<cr>)<c-o>O<tab>
+
+
+" spell ckeck
+map <F6> :setlocal spell! spelllang=en_us<CR>
+
+" select functin
+nnoremap <Leader>vf va{V
+
+" switch to normal mode in terminal
+tnoremap <Esc> <C-\><C-n>
+
+" open vimrc
+nnoremap <space>e :vsp $MYVIMRC<cr>
+
+" reload the .vimrc
+nnoremap <space>r :so $MYVIMRC<cr>
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+"                                 KEY BINDS END                                "
+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
