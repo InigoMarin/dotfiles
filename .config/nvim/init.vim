@@ -130,6 +130,11 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+"------------------------------------------------------------------------------"
+"                                vim maven syntax                              "      
+"------------------------------------------------------------------------------"
+Plug 'NLKNguyen/vim-maven-syntax'
+
 
 "------------------------------------------------------------------------------"
 "                                vim javascript                                "
