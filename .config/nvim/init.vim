@@ -31,7 +31,6 @@ let g:coc_global_extensions = [
 	\ 'coc-git',
 	\ 'coc-highlight',
 	\ 'coc-markdownlint',
-	\ 'coc-python',
 	\ 'coc-java'
 \]
 
@@ -43,6 +42,12 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+
+
+Plug 'mbbill/undotree'
+set undodir=~/.vim/undodir
+set undofile
+
 
 " inoremap <silent><expr> <TAB>
 "       \ pumvisible() ? "\<C-n>" :
@@ -345,7 +350,7 @@ call plug#end()
 "                              VIM DEFAULTS START                              "
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 " color theme
-colorscheme OceanicNext
+colorscheme gruvbox
 set background=dark
 
 set number
