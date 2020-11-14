@@ -38,8 +38,12 @@ let g:coc_global_extensions = [
 	\ 'coc-git',
 	\ 'coc-highlight',
 	\ 'coc-markdownlint',
-	\ 'coc-java'
+	\ 'coc-java',
+	\ 'coc-explorer'
 \]
+
+
+nmap <leader>e :CocCommand explorer<CR>
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -296,6 +300,7 @@ let g:auto_save_events = ["InsertLeave", "TextChanged"]
 "------------------------------------------------------------------------------"
 Plug 'wincent/scalpel'
 
+nmap <Leader>r <Plug>(Scalpel)
 
 "------------------------------------------------------------------------------"
 "                                  auto pairs                                  "
