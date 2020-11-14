@@ -323,6 +323,8 @@ Plug 'mhinz/vim-startify'
 
         let g:startify_bookmarks = [
             \ { 'c': '~/.config/nvim/init.vim' },
+            \ { 'n': '~/.config/newsboat/config' },
+            \ { 'u': '~/.config/newsboat/urls' },
             \ { 'g': '~/.gitconfig' },
             \ { 'z': '~/.zshrc' }
         \ ]
