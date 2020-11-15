@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 "------------------------------------------------------------------------------"
 "                                   nvim yarp                                  "
 "------------------------------------------------------------------------------"
-Plug 'roxma/nvim-yarp'
+" Plug 'roxma/nvim-yarp'
 
 "------------------------------------------------------------------------------"
 "                                   nvim Fugitive                              "
@@ -53,7 +53,7 @@ set cmdheight=2
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
-
+set clipboard=unnamedplus
 
 Plug 'mbbill/undotree'
 set undodir=~/.vim/undodir
@@ -335,6 +335,7 @@ Plug 'mhinz/vim-startify'
 
         let g:startify_bookmarks = [
             \ { 'c': '~/.config/nvim/init.vim' },
+            \ { 't': '~/.tmux.conf' },
             \ { 'n': '~/.config/newsboat/config' },
             \ { 'u': '~/.config/newsboat/urls' },
             \ { 'g': '~/.gitconfig' },
