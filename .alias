@@ -100,7 +100,8 @@ alias trhp='transmission-remote-cli -c 192.168.1.21:9091'
 alias s='googler'
 alias latexmkp='latexmk -pdf -pvc'
 
-
+alias src='surfraw -browser=$BROWSERCLI'          # use for surfraw bookmarks (CLI)
+alias srx='surfraw -browser=$BROWSER'             # use for surfraw bookmarks (GUI)
 # sudo apt install fortunes fortunes-es fortunes-es-off lolcat
 
 # fortune -l | cowsay
