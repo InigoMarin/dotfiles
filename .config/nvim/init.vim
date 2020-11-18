@@ -48,6 +48,7 @@ nmap <leader>e :CocCommand explorer<CR>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 set nobackup
+set noswapfile
 set nowritebackup
 set cmdheight=2
 set updatetime=300
@@ -151,21 +152,26 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "------------------------------------------------------------------------------"
 Plug 'NLKNguyen/vim-maven-syntax'
 
+"------------------------------------------------------------------------------"
+"                                vim java syntax                               "      
+"------------------------------------------------------------------------------"
+Plug 'uiiaoo/java-syntax.vim'
+
 
 "------------------------------------------------------------------------------"
-"                                vim javascript                                "
+"                                vim javascript syntax                         "
 "------------------------------------------------------------------------------"
 Plug 'pangloss/vim-javascript'
 
 
 "------------------------------------------------------------------------------"
-"                                    vim tsx                                   "
+"                                    vim tsx syntax                            "
 "------------------------------------------------------------------------------"
 Plug 'ianks/vim-tsx'
 
 
 "------------------------------------------------------------------------------"
-"                                typescript vim                                "
+"                                vim typescript syntax                         "
 "------------------------------------------------------------------------------"
 Plug 'leafgarland/typescript-vim'
 
@@ -175,6 +181,7 @@ Plug 'leafgarland/typescript-vim'
 "------------------------------------------------------------------------------"
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
 " ignore files and folders in git ignore
 command! FZFGitIgnore call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standard --others --cached'}))
 nmap <C-p> :FZFGitIgnore <CR>
@@ -218,7 +225,15 @@ let g:airline#extensions#wordcount#enabled = 0
 "------------------------------------------------------------------------------"
 Plug 'tpope/vim-surround'
 
+"------------------------------------------------------------------------------"
+"                                 vim commentary                               "
+"------------------------------------------------------------------------------"
+Plug 'tpope/vim-commentary'
 
+"------------------------------------------------------------------------------"
+"                                 vim repeat                                   "
+"------------------------------------------------------------------------------"
+Plug 'tpope/vim-repeat'
 
 "------------------------------------------------------------------------------"
 "                             vim multiple cursors                             "
@@ -338,6 +353,9 @@ Plug 'mhinz/vim-startify'
             \ { 't': '~/.tmux.conf' },
             \ { 'n': '~/.config/newsboat/config' },
             \ { 'u': '~/.config/newsboat/urls' },
+            \ { 'n': '~/.config/newsboat/config' },
+            \ { 'q': '~/.config/qutebrowser/config.py' },
+            \ { 'm': '~/.config/qutebrowser/quickmarks' },
             \ { 'g': '~/.gitconfig' },
             \ { 'z': '~/.zshrc' }
         \ ]
