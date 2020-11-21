@@ -155,3 +155,7 @@ export ANDROID_HOME="/home/ima/Android/Sdk"
 export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:/home/ima/flutter/bin"
 
+# Autojump
+[[ -s /home/ima/.autojump/etc/profile.d/autojump.sh ]] && source /home/ima/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
