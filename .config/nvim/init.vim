@@ -18,6 +18,9 @@ call plug#begin('~/.vim/plugged')
 "------------------------------------------------------------------------------"
 Plug 'tpope/vim-fugitive'
 
+" Add gitlab and github browse
+Plug 'tpope/vim-rhubarb'
+Plug 'shumphrey/fugitive-gitlab.vim'
 
 "------------------------------------------------------------------------------"
 "                                   coc nvim                                   "
@@ -39,6 +42,7 @@ let g:coc_global_extensions = [
 	\ 'coc-highlight',
 	\ 'coc-markdownlint',
 	\ 'coc-java',
+	\ 'coc-omnisharp',
 	\ 'coc-explorer'
 \]
 
