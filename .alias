@@ -12,6 +12,7 @@ alias t='tremc'
 alias v='nvim'
 alias vim='nvim'
 alias d='docker'
+alias o='xdg-open'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias kubectl='sudo microk8s.kubectl'
