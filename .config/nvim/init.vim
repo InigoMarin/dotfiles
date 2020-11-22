@@ -53,6 +53,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 set nobackup
 set noswapfile
+set hidden
 set nowritebackup
 set cmdheight=2
 set updatetime=300
