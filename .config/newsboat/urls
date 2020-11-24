@@ -73,7 +73,7 @@ https://linux.softpedia.com/backend.xml "~NEWSFEED: Softpedia (Linux)"
 https://opensource.com/feed "~NEWSFEED: Opensource.com"
 http://feeds.feedburner.com/fossbytes "~NEWSFEED: FossBytes"
 http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Open Source)"
-https://hackaday.com/blog/feed/ ""~NEWSFEED: Hackaday"
+https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.chrisatmachine.com/rss.xml "~NEWSFEED: Crisatmachine Vim"
 
 "https://www.arquitecturajava.com/feed/" "~NEWSFEED: Arquitectura java"
