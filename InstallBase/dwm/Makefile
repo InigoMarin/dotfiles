@@ -1,7 +1,7 @@
 all: dependencies clipnotify clipmenu dwm st dwmblocks pamixer desktop clean
 
 dependencies:
-	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev libxfixes-dev xsel -y
+	sudo apt install libxft-dev libx11-dev libxinerama-dev  libx11-xcb-dev libxcb-res0-dev libxfixes-dev libharfbuzz-dev xsel -y
 dwm:
 	git clone https://github.com/InigoMarin/dwm.git && cd dwm && sudo make install
 
