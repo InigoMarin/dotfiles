@@ -35,10 +35,12 @@
 	"prettier.stylelintIntegration": true,
 	"prettier.statusItemText": "Prettier",
 
+	"html.autoClosingTags": true,
 	"coc.preferences.formatOnSaveFiletypes": [
 		"typescriptreact",
 		"typescript",
 		"javascript",
+		"javascriptreact",
 		"js",
 		"json",
 		"java"
@@ -50,5 +52,6 @@
 	"coc.preferences.hoverTarget": "echo",
 
 	"codeLens.enable": true,
-	"java.referencesCodeLens.enabled": true
+	"java.referencesCodeLens.enabled": true,
+	"java.errors.incompleteClasspath.severity": "ignore"
 }

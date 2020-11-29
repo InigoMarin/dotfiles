@@ -123,9 +123,9 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>ac  <Plug>(coc-codeaction)
+"xmap <leader>a  <Plug>(coc-codeaction-selected)
+"nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 command! -nargs=0 Format 	:call 		CocAction('format')
@@ -289,13 +289,13 @@ Plug 'cometsong/CommentFrame.vim'
 "------------------------------------------------------------------------------"
 "                                   nerd tree                                  "
 "------------------------------------------------------------------------------"
-Plug 'scrooloose/nerdtree'
-let NERDTreeMapOpenInTab='<Leader>ntt'
-nnoremap <Leader>nt :NERDTree<CR>
-nnoremap <Leader>ntf :NERDTreeFocus<CR>
-nnoremap <Leader>1 :NERDTreeFocus<CR>
-nnoremap <Leader>ntr :NERDTreeRefreshRoot<CR>
-au StdinReadPre * let s:std_in=1
+"Plug 'scrooloose/nerdtree'
+"let NERDTreeMapOpenInTab='<Leader>ntt'
+"nnoremap <Leader>nt :NERDTree<CR>
+"nnoremap <Leader>1 :NERDTreeFocus<CR>
+"nnoremap <Leader>ntf :NERDTreeFocus<CR>
+"nnoremap <Leader>ntr :NERDTreeRefreshRoot<CR>
+"au StdinReadPre * let s:std_in=1
 "au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 
