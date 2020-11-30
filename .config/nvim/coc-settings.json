@@ -43,7 +43,8 @@
 		"javascriptreact",
 		"js",
 		"json",
-		"java"
+		"java",
+		"xml"
 	],
 	"coc.preferences.snippets.enable": true,
 	"diagnostic.messageTarget": "echo",

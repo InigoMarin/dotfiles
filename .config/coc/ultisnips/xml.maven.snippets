@@ -1,0 +1,125 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet sb-h2 "Spring boot h2 dependency" b
+<dependency>
+	<groupId>com.h2database</groupId>
+	<artifactId>h2</artifactId>
+	<scope>runtime</scope>
+</dependency>
+endsnippet
+
+snippet sb-datajpa "Spring Boot Data Jpa dependency" b
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+endsnippet
+
+snippet sb-devtools "Spring Boot Devtools dependency" b
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-devtools</artifactId>
+	<scope>runtime</scope>
+	<optional>true</optional>
+</dependency>
+endsnippet
+
+snippet sb-web "Spring Boot Web dependency" b
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+endsnippet
+
+
+snippet sb-sqlserver "Spring Boot Microsoft Sql Server dependency" b
+<dependency>
+	<groupId>com.microsoft.sqlserver</groupId>
+	<artifactId>mssql-jdbc</artifactId>
+	<scope>runtime</scope>
+</dependency>
+endsnippet
+
+snippet sb-postgresql "Spring Boot PostgreSQL dependency" b
+<dependency>
+	<groupId>org.postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+	<scope>runtime</scope>
+</dependency>
+endsnippet
+
+snippet sb-mysql "Spring Boot Mysql dependency" b
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<scope>runtime</scope>
+</dependency>
+endsnippet
+
+
+
+snippet sb-mongodb "Spring Boot Mongo dependency" b
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-mongodb</artifactId>
+</dependency>
+endsnippet
+
+snippet sb-lonbok "Spring Boot Lombok dependency" b
+<dependency>
+	<groupId>org.projectlombok</groupId>
+	<artifactId>lombok</artifactId>
+	<optional>true</optional>
+</dependency>
+endsnippet
+
+
+snippet sb-security "Spring Boot Security" b
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-security</artifactId>
+</dependency>
+
+<dependency>
+	<groupId>org.springframework.security</groupId>
+	<artifactId>spring-security-test</artifactId>
+	<scope>test</scope>
+</dependency>
+endsnippet
+
+snippet sb-webflux "Spring Boot Web Reactive dependency" b
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-webflux</artifactId>
+</dependency>
+
+<dependency>
+	<groupId>io.projectreactor</groupId>
+	<artifactId>reactor-test</artifactId>
+	<scope>test</scope>
+</dependency>
+endsnippet
