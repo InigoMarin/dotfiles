@@ -23,6 +23,7 @@ require("awful.hotkeys_popup.keys")
 -- local mpdarc_widget = require("awesome-wm-widgets.mpdarc-widget.mpdarc")
 -- local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 local volumearc_widget = require("awesome-wm-widgets.volumearc-widget.volumearc")
+
 -- Load Debian menu entries
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
@@ -269,8 +270,10 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
-    awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
+    awful.key({ modkey, "Shift"           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
+    awful.key({ modkey,           }, "s",     function () awful.util.spawn("dmenu-sr")          end,
+              {description = "search", group = "launcher"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
               {description = "view previous", group = "tag"}),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
@@ -355,9 +358,8 @@ globalkeys = gears.table.join(
     awful.key({ modkey },            "d",     function () awful.spawn("dmenu_run") end,
               {description = "run dmenu", group = "launcher"}),
 
-
-    awful.key({ modkey },            "r",     function () awful.spawn("j4-dmenu-desktop") end,
-              {description = "run dmenu", group = "launcher"}),
+    --awful.key({ modkey },            "r",     function () awful.spawn("j4-dmenu-desktop") end,
+    --          {description = "run dmenu", group = "launcher"}),
     
     awful.key({ modkey }, "m",     function () awful.spawn(terminal .. " -e ncmpcpp") end ,
               {description = "run ncmpcpp", group = "launcher"}),
@@ -374,6 +376,9 @@ globalkeys = gears.table.join(
 	awful.key({ modkey }, "n",     function () awful.spawn(terminal .. " -e newsboat") end ,
               {description = "run newsboat", group = "launcher"}),
 
+    awful.key({ modkey }, "p", function() awful.util.spawn("mpc toggle") end,
+              {description = "show the menubar", group = "launcher"}),
+	
 	awful.key({ modkey }, "F2",     function () awful.spawn("kodi") end ,
               {description = "run kodi", group = "launcher"}),
 	awful.key({ modkey }, "F4",     function () awful.spawn(terminal .. " -e pulsemixer") end ,
@@ -401,7 +406,7 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
+    awful.key({ modkey }, "r", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"})
 )
 
