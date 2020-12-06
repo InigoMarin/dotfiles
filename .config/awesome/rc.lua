@@ -20,8 +20,9 @@ require("awful.hotkeys_popup.keys")
 
 
 -- Extra widgets
-local mpdarc_widget = require("awesome-wm-widgets.mpdarc-widget.mpdarc")
-local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
+-- local mpdarc_widget = require("awesome-wm-widgets.mpdarc-widget.mpdarc")
+-- local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
+local volumearc_widget = require("awesome-wm-widgets.volumearc-widget.volumearc")
 -- Load Debian menu entries
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
@@ -237,11 +238,21 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-			mpdarc_widget,
+			--mpdarc_widget,
             --mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
-			volume_widget({display_notification = true}),
+			--volume_widget({display_notification = true}),
+			volumearc_widget({
+    			main_color = '#af13f7',
+    			mute_color = '#ff0000',
+    			thickness = 5,
+			    height = 25,
+			    button_press = function(_, _, _, button)   -- Overwrites the button press behaviour to open pavucontrol when clicked
+			        if (button == 1) then awful.spawn('pavucontrol --tab=3', false)
+		        	end
+    			end
+			}),
             s.mylayoutbox,
         },
     }
