@@ -123,6 +123,7 @@ install ncmpcpp
 install mpc
 install python3-mutagen
 install mpdris2
+install playerctl
 
 # SOUND
 install pulseaudio
