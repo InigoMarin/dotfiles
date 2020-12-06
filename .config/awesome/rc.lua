@@ -650,6 +650,7 @@ end
 
 run_once("compton")
 run_once("dunst") 
+run_once("mpd-notification") 
 run_once("feh --bg-fill --randomize $HOME/wallpapers/*")
 
 -- ]]
