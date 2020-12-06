@@ -19,6 +19,9 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 
+-- Extra widgets
+local mpdarc_widget = require("awesome-wm-widgets.mpdarc-widget.mpdarc")
+local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 -- Load Debian menu entries
 local debian = require("debian.menu")
 local has_fdo, freedesktop = pcall(require, "freedesktop")
@@ -234,9 +237,11 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
+			mpdarc_widget,
+            --mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
+			volume_widget({display_notification = true}),
             s.mylayoutbox,
         },
     }
@@ -617,12 +622,23 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- Gaps
+-- Configure Gaps
 
 beautiful.useless_gap=5
 
--- Autostart
+-- [[ Autostart
 
-awful.spawn.with_shell("compton")
-awful.spawn.with_shell("dunst") 
---awful.spawn.with_shell("mpDris2")
+function run_once(cmd)
+  findme = cmd
+  firstspace = cmd:find(" ")
+  if firstspace then
+     findme = cmd:sub(0, firstspace-1)
+  end
+  awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
+end 
+
+run_once("compton")
+run_once("dunst") 
+run_once("feh --bg-fill --randomize $HOME/wallpapers/*")
+
+-- ]]
