@@ -272,7 +272,7 @@ root.buttons(gears.table.join(
 globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
-    awful.key({ modkey,           }, "s",     function () awful.util.spawn("dmenu-sr")          end,
+    awful.key({ modkey,           }, "s",     function () awful.spawn("dmenu-sr")          end,
               {description = "search", group = "launcher"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
               {description = "view previous", group = "tag"}),
@@ -358,8 +358,8 @@ globalkeys = gears.table.join(
     awful.key({ modkey },            "d",     function () awful.spawn("dmenu_run") end,
               {description = "run dmenu", group = "launcher"}),
 
-    --awful.key({ modkey },            "r",     function () awful.spawn("j4-dmenu-desktop") end,
-    --          {description = "run dmenu", group = "launcher"}),
+	awful.key({ modkey },            "r",     function () awful.spawn("j4-dmenu-desktop") end,
+              {description = "run dmenu", group = "launcher"}),
     
     awful.key({ modkey }, "m",     function () awful.spawn(terminal .. " -e ncmpcpp") end ,
               {description = "run ncmpcpp", group = "launcher"}),
@@ -404,10 +404,10 @@ globalkeys = gears.table.join(
                     history_path = awful.util.get_cache_dir() .. "/history_eval"
                   }
               end,
-              {description = "lua execute prompt", group = "awesome"}),
+              {description = "lua execute prompt", group = "awesome"})
     -- Menubar
-    awful.key({ modkey }, "r", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+    -- awful.key({ modkey }, "r", function() menubar.show() end,
+    --          {description = "show the menubar", group = "launcher"})
 )
 
 clientkeys = gears.table.join(

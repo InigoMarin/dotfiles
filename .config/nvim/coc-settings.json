@@ -44,7 +44,8 @@
 		"js",
 		"json",
 		"java",
-		"xml"
+		"xml",
+		"markdown"
 	],
 	"coc.preferences.snippets.enable": true,
 	"diagnostic.messageTarget": "echo",

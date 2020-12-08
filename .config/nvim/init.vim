@@ -1,4 +1,5 @@
 set shell=/bin/zsh
+set colorcolumn=80
 let mapleader = ","
 
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -170,6 +171,7 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+nnoremap <leader>sw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 "------------------------------------------------------------------------------"
 "                                Snippets                                       "      
 "------------------------------------------------------------------------------"
@@ -383,6 +385,7 @@ Plug 'mhinz/vim-startify'
 
         let g:startify_bookmarks = [
             \ { 'c': '~/.config/nvim/init.vim' },
+            \ { 'a': '~/.config/awesome/rc.lua' },
             \ { 't': '~/.tmux.conf' },
             \ { 'n': '~/.config/newsboat/config' },
             \ { 'u': '~/.config/newsboat/urls' },
