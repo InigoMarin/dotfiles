@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+postman &
+brave-browser-stable http://localhost:8080 &
+
