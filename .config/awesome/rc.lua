@@ -232,6 +232,12 @@ globalkeys = my_table.join(
 	
 	awful.key({ modkey }, "n",     function () awful.spawn(terminal .. " -e newsboat") end ,
               {description = "run newsboat", group = "hotkeys"}),
+	
+	awful.key({ modkey }, "c",     function () awful.spawn("brave-browser-stable") end ,
+              {description = "run newsboat", group = "hotkeys"}),
+	
+	awful.key({ modkey, "Shift"}, "c",     function () awful.spawn("qutebrowser") end ,
+              {description = "run newsboat", group = "hotkeys"}),
 	-- ncmpcpp 
 	awful.key({ modkey }, "m",     function () awful.spawn(terminal .. " -e ncmpcpp") end ,
     {description = "run ncmpcpp", group = "hotkeys"}),
