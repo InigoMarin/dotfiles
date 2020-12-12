@@ -75,7 +75,7 @@ local virtualmachine    = "virtualbox"
 -- awesome variables
 awful.util.terminal = terminal
 --awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
-awful.util.tagnames = { " DEV ", " WWW ", " SYS ", " DOC ", " VBOX ", " CHAT ", " MUS ", " VID ", " GFX " }
+awful.util.tagnames = { " DEV ", " API ", " WEB ", " DOC ", " VBOX ", " CHAT ", " MUS ", " VID ", " GFX " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,
@@ -700,6 +700,9 @@ awful.rules.rules = {
 
     { rule = { class = "Vlc" },
           properties = { maximized = true } },
+    
+	{ rule = { class = "Postman" },
+          properties = { maximized = true, tag =" API " } },
 
     { rule = { class = "VirtualBox Manager" },
           properties = { maximized = true } },
