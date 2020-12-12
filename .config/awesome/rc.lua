@@ -233,7 +233,10 @@ globalkeys = my_table.join(
 	awful.key({ modkey }, "n",     function () awful.spawn(terminal .. " -e newsboat") end ,
               {description = "run newsboat", group = "hotkeys"}),
 	
-	awful.key({ modkey }, "c",     function () awful.spawn("brave-browser-stable") end ,
+	awful.key({ modkey }, "c",     function () awful.spawn("google-chrome") end ,
+              {description = "run newsboat", group = "hotkeys"}),
+	
+	awful.key({ modkey, "Control"}, "c",     function () awful.spawn("brave-browser-stable") end ,
               {description = "run newsboat", group = "hotkeys"}),
 	
 	awful.key({ modkey, "Shift"}, "c",     function () awful.spawn("qutebrowser") end ,
@@ -489,6 +492,8 @@ globalkeys = my_table.join(
 	awful.key({ }, "XF86AudioPlay", function () awful.util.spawn("mpc toggle") end),
     awful.key({ }, "XF86AudioNext", function () awful.util.spawn("mpc next") end),
     awful.key({ }, "XF86AudioPrev", function () awful.util.spawn("mpc prev") end),
+
+    awful.key({modkey }, "p", function () awful.util.spawn("mpc toggle") end),
     
     -- Pulse volume control
     awful.key({ }, "XF86AudioRaiseVolume",
@@ -713,8 +718,8 @@ awful.rules.rules = {
     { rule = { class = "Xfce4-settings-manager" },
           properties = { floating = false } },
 
-    { rule = { instance = "qutebrowser" },
-          properties = { screen = 1, tag = " SYS " } },
+    { rule = { class = "Brave-browser" },
+          properties = { screen = 1, tag = " WEB " } },
 
 
     -- Floating clients.
