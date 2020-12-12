@@ -16,3 +16,4 @@ function install {
 install xorg
 install pulseaudio
 install lightdm
+install lxappearance

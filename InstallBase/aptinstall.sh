@@ -133,7 +133,7 @@ install blueman
 
 install pavucontrol
 install pulsemixer
-
+install volumeicon-alsa
 # KODI
 install kodi
 install kodi-pvr-hts
