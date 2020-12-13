@@ -1,3 +1,13 @@
+env:
+  # TERM env customization.
+  #
+  # If this property is not set, alacritty will set it to xterm-256color.
+  #
+  # Note that some xterm terminfo databases don't declare support for italics.
+  # You can verify this by checking for the presence of `smso` and `sitm` in
+  # `infocmp xterm-256color`.
+  TERM: xterm-256color
+
 window:
   dynamic_title: true
   # Window dimensions (changes require restart)
@@ -104,7 +114,10 @@ font:
 draw_bold_text_with_bright_colors: false
 
 
+
+
 # Colors (Gruvbox Material Dark Medium)
+
 colors:
   primary:
     background: '0x282828'
