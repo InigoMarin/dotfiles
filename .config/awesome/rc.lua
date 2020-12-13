@@ -861,6 +861,7 @@ function run_once(cmd)
   awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end 
 
+--run_once("xrandr -s 1920x1080") 
 run_once("compton")
 run_once("dunst") 
 --run_once("mpd-notification") 

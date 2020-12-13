@@ -247,7 +247,7 @@ theme.weather = lain.widget.weather({
     end
 })
 
---/ fs
+--[[--/ fs
 local fsicon = wibox.widget.imagebox(theme.widget_hdd)
 theme.fs = lain.widget.fs({
     notification_preset = { fg = theme.fg_normal, bg = theme.bg_normal, font = "Noto Sans Mono Medium 10" },
@@ -256,6 +256,7 @@ theme.fs = lain.widget.fs({
         widget:set_markup(markup.font(theme.font, fsp))
     end
 })
+--]]
 
 
 -- Battery
@@ -399,10 +400,10 @@ function theme.at_screen_connect(s)
             -- using separators
             --arrow(theme.bg_normal, "#343434"),
            -- wibox.container.background(wibox.container.margin(wibox.widget { mailicon, mail and mail.widget, layout = wibox.layout.align.horizontal }, 4, 7), "#343434"),
-            arrow("alpha", "#7197E7"),
-            wibox.container.background(wibox.container.margin(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, 3, 6), "#7197E7"),
-            arrow("#7197E7", "#A77AC4"),
-            wibox.container.background(wibox.container.margin(wibox.widget { fsicon, theme.fs.widget, layout = wibox.layout.align.horizontal }, 2, 3), "#A77AC4"),
+            arrow("alpha", "#A77AC4"),
+            wibox.container.background(wibox.container.margin(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, 3, 6), "#A77AC4"),
+            --arrow("#7197E7", "#A77AC4"),
+            --wibox.container.background(wibox.container.margin(wibox.widget { fsicon, theme.fs.widget, layout = wibox.layout.align.horizontal }, 2, 3), "#A77AC4"),
             arrow("#A77AC4", "#7197E7"),
             wibox.container.background(wibox.container.margin(wibox.widget { memicon, mem.widget, layout = wibox.layout.align.horizontal }, 2, 3), "#7197E7"),
             arrow("#7197E7", "#A77AC4"),
