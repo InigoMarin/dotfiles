@@ -384,7 +384,6 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
             --[[ using shapes
             pl(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, "#343434"),
             pl(task, "#343434"),
@@ -421,6 +420,7 @@ function theme.at_screen_connect(s)
             arrow("#7197E7", "alpha"),
             --]]
             s.mylayoutbox,
+            wibox.widget.systray()
         },
     }
 end
