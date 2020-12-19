@@ -40,6 +40,7 @@ let g:coc_global_extensions = [
 	\ 'coc-highlight',
 	\ 'coc-markdownlint',
 	\ 'coc-java',
+	\ 'coc-lua',
 	\ 'coc-omnisharp',
 	\ 'coc-snippets',
 	\ 'coc-explorer'
