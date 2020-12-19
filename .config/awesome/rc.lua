@@ -512,6 +512,10 @@ globalkeys = my_table.join(
             beautiful.volume.update()
         end),
 
+    awful.key({ }, "Insert",
+        function ()
+			awful.util.spawn("clipmenu")
+        end),
     -- Copy primary to clipboard (terminals to gtk)
     awful.key({ modkey }, "c", function () awful.spawn.with_shell("xsel | xsel -i -b") end,
               {description = "copy terminal to gtk", group = "hotkeys"}),
@@ -862,11 +866,14 @@ function run_once(cmd)
 end 
 
 --run_once("xrandr -s 1920x1080") 
+--run_once("nm-applet")
 run_once("compton")
 run_once("dunst") 
+ run_once("setxkbmap -option caps:escape")
 --run_once("mpd-notification") 
 run_once("feh --bg-fill --randomize $HOME/wallpapers/*")
 run_once("wmname LG3D") --Fix java applications
+run_once("clipmenud")
 --run_once("volumeicon")
 --run_once("nm-applet")
 -- ]]
