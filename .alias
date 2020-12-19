@@ -16,6 +16,7 @@ alias o='xdg-open'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias kubectl='sudo microk8s.kubectl'
+alias mvn-init="mvn archetype:generate -DgroupId=com.maringarcia -DartifactId=rx -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false"
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..='cd ..'
 alias ...='cd ../..'
