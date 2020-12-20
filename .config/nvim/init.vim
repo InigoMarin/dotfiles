@@ -46,7 +46,7 @@ let g:coc_global_extensions = [
 	\ 'coc-explorer'
 \]
 
-
+Plug 'ryanoasis/vim-devicons'
 nmap <leader>e :CocCommand explorer<CR>
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile

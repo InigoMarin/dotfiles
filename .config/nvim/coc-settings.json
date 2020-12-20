@@ -1,4 +1,6 @@
 {
+	"explorer.previewAction.onHover": false,
+	"explorer.icon.enableNerdfont": true,
 	"suggest.triggerAfterInsertEnter": true,
 	"suggest.noselect": false,
 	"suggest.minTriggerInputLength": 2,
