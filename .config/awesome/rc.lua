@@ -874,6 +874,6 @@ run_once("dunst")
 run_once("feh --bg-fill --randomize $HOME/wallpapers/*")
 run_once("wmname LG3D") --Fix java applications
 run_once("clipmenud")
---run_once("volumeicon")
---run_once("nm-applet")
+run_once("volumeicon")
+run_once("nm-applet")
 -- ]]
