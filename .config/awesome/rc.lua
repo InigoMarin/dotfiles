@@ -220,7 +220,7 @@ globalkeys = my_table.join(
     
 	awful.key({ modkey }, "w",
     function ()
-        awful.spawn("rofi -show window")
+        awful.spawn("rofi -show window -show-icons")
 	end,
     {description = "show rofi window", group = "hotkeys"}),
 
