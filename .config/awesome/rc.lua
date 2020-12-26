@@ -722,8 +722,8 @@ awful.rules.rules = {
     { rule = { class = "Xfce4-settings-manager" },
           properties = { floating = false } },
 
-    { rule = { class = "Brave-browser" },
-          properties = { screen = 1, tag = " WEB " } },
+    --{ rule = { class = "Brave-browser" },
+    --      properties = { screen = 1, tag = " WEB " } },
 
 
     -- Floating clients.

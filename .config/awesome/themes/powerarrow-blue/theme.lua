@@ -181,7 +181,7 @@ mpdicon:buttons(my_table.join(
 theme.mpd = lain.widget.mpd({
     settings = function()
         if mpd_now.state == "play" then
-            artist = " " .. mpd_now.artist .. " "
+            artist = " " .. mpd_now.artist .. " - "
             title  = mpd_now.title  .. " "
             mpdicon:set_image(theme.widget_music_on)
             widget:set_markup(markup.font(theme.font, markup("#FFFFFF", artist) .. " " .. title))
