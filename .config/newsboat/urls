@@ -37,6 +37,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCOi2wszcfvs0j9Pcom3z9VA "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8LeXCWOalN8SxlrPcG-PaQ "~YOUTUBE: midudev" react
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJetJ7nDNLlEzDLXv7KIo0w "~YOUTUBE: Gavin Feeborn" linux
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6fXiuFCWAnVPwRhBMztLlQ "~YOUTUBE: Leeren" vim
+https://www.youtube.com/feeds/videos.xml?channel_id=UCe2C8jlvtp_UGsQZExBSdZg "~YOUTUBE: Codevion" vim
 ---------------------
 ---------------------
 ------ RSS ----------
@@ -77,6 +78,7 @@ https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.chrisatmachine.com/rss.xml "~NEWSFEED: Crisatmachine Vim"
 
 "https://www.arquitecturajava.com/feed/" "~NEWSFEED: Arquitectura java"
+"https://pavelmakhov.com/feed.xml" "~NEWSFEED: awesomewm pavel"
 ---------------------
 ------ GIT ----------
 ---------------------
@@ -92,6 +94,7 @@ https://gitlab.com/dwt1.atom "~GITLAB: dwt1 (distrotube)"
 https://github.com/LukeSmithxyz.atom "~GITHUB: LukeSmithxyz"
 https://github.com/BrodieRobertson.atom "~GITHUB: BrodieRobertson"
 https://github.com/newsboat/newsboat/releases.atom "~GITHUB: Newsboat Release"
+https://github.com/vimwiki/vimwiki/releases.atom "~GITHUB: vimwiki Release"
 ---------------------
 ------ REDDIT -------
 ---------------------

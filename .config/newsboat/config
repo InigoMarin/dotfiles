@@ -7,6 +7,7 @@ download-retries 4
 download-timeout 10
 prepopulate-query-feeds yes
 
+external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
 # -- display -------------------------------------------------------------------
 feed-sort-order title
@@ -42,15 +43,16 @@ highlight feedlist "TORRENT: .*" cyan default
 
 text-width 80
 
-browser $BROWSER
-macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser $BROWSER
-macro t set browser "transadd %u"; open-in-browser ; set browser $BROWSER
-macro a set browser "pctmix %u"; open-in-browser ; set browser $BROWSER
-macro w set browser "qutebrowser %u"; open-in-browser ; set browser $BROWSER
-macro c set browser "sr google $(xsel -p)" ; open-in-browser ; set browser $BROWSER
-macro i set browser "imdb"; open-in-browser ; set browser $BROWSER
-macro r set browser "tuir %u"; open-in-browser ; set browser  $BROWSER
-macro f set browser "filmaffinity"; open-in-browser ; set browser $BROWSER
+browser linkhandler
+macro , open-in-browser
+macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser linkhandler
+macro t set browser "transadd %u"; open-in-browser ; set browser linkhandler
+macro a set browser "pctmix %u"; open-in-browser ; set browser linkhandler
+macro w set browser "qutebrowser %u"; open-in-browser ; set browser linkhandler
+macro c set browser "sr google $(xsel -p)" ; open-in-browser ; set browser linkhandler
+macro i set browser "imdb"; open-in-browser ; set browser linkhandler
+macro r set browser "tuir %u"; open-in-browser ; set browser  linkhandler
+macro f set browser "filmaffinity"; open-in-browser ; set browser linkhandler
 
 #------------------------------------
 #Install dependecies"
@@ -58,9 +60,7 @@ macro f set browser "filmaffinity"; open-in-browser ; set browser $BROWSER
 #sudo apt-get install youtube-dl
 #------------------------------------
 
-macro d set browser "tsp youtube-dl –add-metadata -ic"; open-in-browser ; set browser $BROWSER
-macro m set browser "tsp youtube-dl –add-metadata -xic"; open-in-browser ; set browser $BROWSER
-macro M set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best"; open-in-browser ; set browser $BROWSER
+macro d set browser "dmenuhandler"; open-in-browser ; set browser linkhandler
 
 download-path   "~/Descargas/rss/%n"
 save-path       "~/Descargas/rss"
