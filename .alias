@@ -9,11 +9,20 @@ alias m='ncmpcpp'
 alias n='newsboat'
 alias np='newsboat -u ~/.config/newsboatp/urls -c ~/.config/newsboatp/cache.db -C ~/.config/newsboatp/config'
 alias t='tremc'
-alias v='nvim'
-alias e='emacs'
-alias vim='nvim'
 alias d='docker'
 alias o='xdg-open'
+
+# vim and emacs
+alias v='nvim'
+alias vim="nvim"
+alias e='devour emacs'
+alias em="/usr/bin/emacs -nw"
+#alias emacs="emacsclient -c -a 'emacs'"
+alias doomsync="~/.emacs.d/bin/doom sync"
+alias doomdoctor="~/.emacs.d/bin/doom doctor"
+alias doomupgrade="~/.emacs.d/bin/doom upgrade"
+alias doompurge="~/.emacs.d/bin/doom purge"
+
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias kubectl='sudo microk8s.kubectl'
@@ -36,7 +45,8 @@ alias egrep='egrep --color=auto'
 
 alias ls='ls --color=auto'
 alias cp='cp -i'  # confirm before overwriting something
-alias df='df -H -l'
+alias df='duf'
+#alias df='df -H -l'
 alias free='free -h ' # human readeble sizes
 alias cls='clear'
 alias ls='ls --color=auto'
