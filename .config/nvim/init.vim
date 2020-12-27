@@ -5,7 +5,7 @@ let mapleader = ","
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                                VIM PLUG START                                "
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-nmap <C-p> :Buffer<CR>
+"nmap <C-p> :Buffer<CR>
 call plug#begin('~/.vim/plugged')
 
 
@@ -216,6 +216,7 @@ Plug 'stsewd/fzf-checkout.vim'
 " ignore files and folders in git ignore
 command! FZFGitIgnore call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standard --others --cached'}))
 nmap <C-p> :FZFGitIgnore <CR>
+nmap <C-P> :Files <CR>
 imap <C-p> <Esc>:FZFGitIgnore <CR>
 nmap <C-B> :Buffers <CR>
 nnoremap <C-L> :Lines <CR>
