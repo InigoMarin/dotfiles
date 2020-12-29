@@ -60,6 +60,7 @@ theme.widget_battery_low                        = theme.dir .. "/icons/battery_l
 theme.widget_battery_empty                      = theme.dir .. "/icons/battery_empty.png"
 theme.widget_mem                                = theme.dir .. "/icons/mem.png"
 theme.widget_cpu                                = theme.dir .. "/icons/cpu.png"
+theme.widget_torrent                            = theme.dir .. "/icons/torrent.png"
 theme.widget_temp                               = theme.dir .. "/icons/temp.png"
 theme.widget_net                                = theme.dir .. "/icons/net.png"
 theme.widget_hdd                                = theme.dir .. "/icons/hdd.png"
@@ -101,7 +102,14 @@ theme.titlebar_maximized_button_normal_inactive = theme.dir .. "/icons/titlebar/
 local markup = lain.util.markup
 local separators = lain.util.separators
 
-
+-- Torrent
+local torrenticon = wibox.widget.imagebox(theme.widget_torrent)
+local torrent = awful.widget.watch(
+    "torrent", 60,
+    function(widget, stdout)
+        widget:set_markup(" " .. markup.font(theme.font, stdout))
+    end
+)
 -- Textclock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
 local clock = awful.widget.watch(
@@ -397,9 +405,9 @@ function theme.at_screen_connect(s)
             pl(binclock.widget, "#777E76"),
             --]]
             -- using separators
-            --arrow(theme.bg_normal, "#343434"),
-           -- wibox.container.background(wibox.container.margin(wibox.widget { mailicon, mail and mail.widget, layout = wibox.layout.align.horizontal }, 4, 7), "#343434"),
-            arrow("alpha", "#A77AC4"),
+            arrow("alpha", "#7197E7"),
+            wibox.container.background(wibox.container.margin(wibox.widget { torrenticon, torrent, layout = wibox.layout.align.horizontal }, 4, 7), "#7197E7"),
+            arrow("#7197E7", "#A77AC4"),
             wibox.container.background(wibox.container.margin(wibox.widget { mpdicon, theme.mpd.widget, layout = wibox.layout.align.horizontal }, 3, 6), "#A77AC4"),
             --arrow("#7197E7", "#A77AC4"),
             --wibox.container.background(wibox.container.margin(wibox.widget { fsicon, theme.fs.widget, layout = wibox.layout.align.horizontal }, 2, 3), "#A77AC4"),
