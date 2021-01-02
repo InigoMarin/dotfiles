@@ -24,7 +24,6 @@ install unzip
 install p7zip
 install wakeonlan
 install pandoc
-install w3m
 install newsboat
 install youtube-dl
 install task-spooler
@@ -58,10 +57,14 @@ sudo apt -y install python3-pip
 sudo pip3 install setuptools
 sudo pip3 install pynvim
 
-# Console web searcher
+# Console Browser
+install w3m
+install w3m-img
 
+# Console web searcher
 install googler
 install ddgr
+install surfraw
 
 # Browser
 install qutebrowser
@@ -80,6 +83,12 @@ install celluloid
 #install gimp
 #install jpegoptim
 #install optipng
+install feh
+install sxiv
+
+# Screen capture
+install maim
+isntall scrot
 
 # Fonts
 install fonts-powerline
@@ -94,33 +103,30 @@ install fortunes
 install fortunes-es
 install fortunes-es-off
 
-# DWM
+# WM
+install suckless-tools
+install rofi
+install j4-dmenu-desktop
+install wmctrl
+
 install lxappearance
 install synaptic
-install feh
-install suckless-tools
 install compton
-install sxiv
 install lm-sensors
-#install rofi
-install maim
-install surfraw
 install gawk
 install xsel
 install dunst
-install j4-dmenu-desktop
 install mediainfo
-install wmctrl
-install cmus
-install w3m-img
 install imagemagick
 install calcurse
 install libnotify-bin
 
-# MPD
+# MUSIC
 install mpd
 install ncmpcpp
 install mpc
+
+install cmus
 install python3-mutagen
 install mpdris2
 install playerctl
@@ -131,9 +137,11 @@ install pulseaudio-module-bluetooth
 install bluez-firmware
 install blueman
 
+# Sound equalizer
 install pavucontrol
 install pulsemixer
 install volumeicon-alsa
+
 # KODI
 install kodi
 install kodi-pvr-hts
