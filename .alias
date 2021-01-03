@@ -12,6 +12,7 @@ alias t='tremc'
 alias d='docker'
 alias o='xdg-open'
 alias ys='straw-viewer'
+alias src='sr -browser=/usr/bin/w3m'
 
 # vim and emacs
 alias v='nvim'
