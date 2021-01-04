@@ -88,7 +88,10 @@ alias update='sudo apt-get update && sudo apt-get upgrade'
 alias upgrade='sudo apt-get upgrade'
 alias updatepis='ansible pi -u pi -m apt -a "upgrade=yes update_cache=yes" -b'
 alias clean='sudo apt-get autoclean && sudo apt-get autoremove'
+
+
 alias up='wakeonlan BA:D1:6D:8C:78:B7'
+alias hpilo='ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 ima@192.168.1.20'
 alias vps='ssh ubuntu@maringarcia.xyz'
 
 # Python
