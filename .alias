@@ -1,5 +1,6 @@
 
 alias vpn='sudo openvpn --config /home/ima/ima.ovpn'
+alias vpnt='sudo openvpn --config /home/ima/k35__ssl_vpn_config.ovpn'
 alias pcinf11='rdesktop -r disk:test=/home/ima/Descargas -u ima -d samudo.local -g 1280x720 10.0.17.100'
 alias vmtc1='rdesktop -r5 -r disk:test=/home/ima/Descargas -z 10.0.100.25 -f -u admintc -d vmtc1 -g 1920x1080'
 alias montar='sudo mount 192.168.1.21:/media/prot_data /mnt/prot'
@@ -224,4 +225,41 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+
+primereact-install()
+{
+    green=`tput setaf 2`
+
+    echo "${green}****************************************"
+    echo "${green}Installing primereact"
+    echo "${green}****************************************"
+    yarnpkg add primereact
+
+
+    echo "${green}****************************************"
+    echo "${green}*Installing primeicons"
+    echo "${green}****************************************"
+    yarnpkg add primeicons
+
+    echo "${green}****************************************"
+    echo "${green}*Installing primeflex"
+    echo "${green}****************************************"
+    yarnpkg add primeflex
+
+    echo "${green}****************************************"
+    echo "${green}*Installing react-transition-group"
+    echo "${green}****************************************"
+    yarnpkg add react-transition-group
+
+    echo "${green}****************************************"
+    echo "${green}*Installing quill.js"
+    yarnpkg add quill
+    echo "${green}****************************************"
+
+
+
+}
+
+
 
