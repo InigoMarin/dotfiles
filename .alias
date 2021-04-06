@@ -253,6 +253,11 @@ primereact-install()
     yarnpkg add react-transition-group
 
     echo "${green}****************************************"
+    echo "${green}*Installing classnames"
+    echo "${green}****************************************"
+    yarnpkg add classnames
+    
+    echo "${green}****************************************"
     echo "${green}*Installing quill.js"
     yarnpkg add quill
     echo "${green}****************************************"
