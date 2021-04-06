@@ -259,11 +259,8 @@ primereact-install()
     
     echo "${green}****************************************"
     echo "${green}*Installing quill.js"
-    yarnpkg add quill
     echo "${green}****************************************"
-
-
-
+    yarnpkg add quill
 }
 
 
