@@ -8,4 +8,4 @@
 
 # Location of link to wallpaper link.
 
-feh --bg-fill --randomize $HOME/wallpapers/* && notify-send -i "$bgloc" "Changing wallpaper..."
+feh --bg-max --randomize $HOME/wallpapers/* && notify-send -i "$bgloc" "Changing wallpaper..."
