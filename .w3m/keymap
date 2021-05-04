@@ -680,11 +680,11 @@ keymap  :t       SHELL "$EDITOR ~/.w3m/RestoreTab.txt"
 
 # yank url to clipboard
 # keymap  yx      EXTERN_LINK   '(echo -n %s | xsel -b)'
-keymap  yx      EXTERN_LINK   '(printf %s | xsel -b)'
-keymap  YX      EXTERN        '(printf %s | xsel -b)'
+keymap  yy      EXTERN_LINK   '(printf %s | xsel -b)'
+keymap  YY      EXTERN        '(printf %s | xsel -b)'
 # yank url to tmux clipboard
-keymap  yy      EXTERN_LINK   'tmux set-buffer'
-keymap  YY      EXTERN        'tmux set-buffer'
+#keymap  yy      EXTERN_LINK   'tmux set-buffer'
+##keymap  YY      EXTERN        'tmux set-buffer'
 
 # open gui browser
 keymap  xw      EXTERN_LINK   '$BROWSER'
@@ -696,8 +696,8 @@ keymap  XN      EXTERN        '$BROWSER_PRIVATE'
 # keymap  xd      EXTERN_LINK   'TS_SOCKET=/tmp/w3m tsp aria2c -j 1 -x 2 -c -d ~/Downloads'
 keymap  yd      EXTERN_LINK   'youtube-dl -o "~/Downloads/%(title)s.%(ext)s"'
 keymap  xd      EXTERN_LINK   'pctmix'
-keymap  XD      EXTERN_LINK   'diana --pause add'
-keymap  xD      SHELL         'diana-mui'
+keymap  vd      EXTERN_LINK   'pctmixview'
+keymap  xD      EXTERN        'pctmix'
 
 # keymap  wg      EXTERN_LINK   'TS_SOCKET=/tmp/w3m tsp wget -c -P /media/EdoTensei/Wget'
 # keymap  WG      EXTERN        'TS_SOCKET=/tmp/w3m tsp wget -c -P /media/EdoTensei/Wget'
@@ -714,9 +714,11 @@ keymap  xf      EXTERN_LINK   'feh -. -x -B black -g 900x600-15+60 %s &'
 keymap  xF      EXTERN_LINK   'mpv --loop --quiet --ontop --no-border --force-window --autofit=900x600 --geometry=-15+60'
 
 # add torrent or magnetlinks
-# keymap  xt      EXTERN_LINK   'transmission-remote --add'
-keymap  xt      EXTERN_LINK   ~/.scripts/privatescripts/addtorrent-thinkcentre
-keymap  XT      EXTERN        ~/.sripts/shellscripts/torrentportal
+keymap  xt      EXTERN_LINK   'transadd'
+keymap  xT      EXTERN        'transadd'
+keymap  st      SHELL         'tremc'
+#keymap  xt      EXTERN_LINK   ~/.scripts/privatescripts/addtorrent-thinkcentre
+#keymap  XT      EXTERN        ~/.sripts/shellscripts/torrentportal
 
 # basic task-spooler view, cat, clear
 # keymap  xs      SHELL         'watch TS_SOCKET=/tmp/w3m tsp'
@@ -814,7 +816,7 @@ keymap  s1      COMMAND       "TAB_GOTO https://1337x.to; GOTO_LINE 6; NEXT_LINK
 keymap  sx      COMMAND       "TAB_GOTO https://stackexchange.com; GOTO_LINE 7; NEXT_LINK; GOTO_LINK"
 keymap  \\\?    COMMAND       "HELP; SEARCH User-Defined; CENTER_V"
 # keymap  \\\m    COMMAND       "SHELL 'man w3m'"
-keymap  \\\x    COMMAND       "LIST; SEARCH \.torrent$; EXTERN_LINK ~/.scripts/privatescripts/addtorrent-thinkcentre"
-keymap  \\\m    COMMAND       "LIST; SEARCH magnet:\?; EXTERN_LINK ~/.scripts/privatescripts/addtorrent-thinkcentre"
+keymap  ,t    COMMAND       "LIST; SEARCH \.torrent$; EXTERN_LINK transadd"
+keymap  ,m    COMMAND       "LIST; SEARCH magnet:\?; EXTERN_LINK transadd"
 
 # }}}
