@@ -17,3 +17,4 @@ install xorg
 install pulseaudio
 install lightdm
 install lxappearance
+install awesome
