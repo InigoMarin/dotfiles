@@ -85,9 +85,9 @@ http://feeds.feedburner.com/fossbytes "~NEWSFEED: FossBytes"
 http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Open Source)"
 https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.chrisatmachine.com/rss.xml "~NEWSFEED: Crisatmachine Vim"
-
-"https://www.arquitecturajava.com/feed/" "~NEWSFEED: Arquitectura java"
-"https://pavelmakhov.com/feed.xml" "~NEWSFEED: awesomewm pavel"
+https://www.arquitecturajava.com/feed/ "~NEWSFEED: Arquitectura java"
+https://www.eduardocollado.com/feed/ "~NEWSFEED: Eduardo collado"
+https://pavelmakhov.com/feed.xml "~NEWSFEED: awesomewm pavel"
 ---------------------
 ------ GIT ----------
 ---------------------
