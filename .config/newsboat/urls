@@ -86,8 +86,9 @@ http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Op
 https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.chrisatmachine.com/rss.xml "~NEWSFEED: Crisatmachine Vim"
 
-"https://www.arquitecturajava.com/feed/" "~NEWSFEED: Arquitectura java"
-"https://pavelmakhov.com/feed.xml" "~NEWSFEED: awesomewm pavel"
+https://www.arquitecturajava.com/feed/ "~NEWSFEED: Arquitectura java"
+https://pavelmakhov.com/feed.xml "~NEWSFEED: awesomewm pavel"
+https://feeds.feedburner.com/Ofertaman "~NEWSFEED: Ofertaman"
 ---------------------
 ------ GIT ----------
 ---------------------
