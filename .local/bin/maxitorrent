@@ -1,0 +1,5 @@
+#!/bin/sh
+# Mimeapp script for adding torrent to transmission-daemon, but will also start the daemon first if not running.
+
+curl -s $1 | grep -E  "window\.location.\href" | cut -d\" -f 2 | xargs -I{} transadd echo "http:"\{\}
+
