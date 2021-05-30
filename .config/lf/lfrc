@@ -42,6 +42,15 @@ cmd xdgopen ${{
 
 cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
 
+cmd extract ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "extract?[y/N]"
+	read ans
+	[ $ans = "y" ] && ext $fx
+}}
+
 cmd delete ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
@@ -100,28 +109,28 @@ map f
 # Bindings
 map . set hidden!
 map <c-f> $lf -remote "send $id select '$(fzf)'"
-map J $lf -remote "send $id cd $(cut -d'	' -f2 ${XDG_CONFIG_HOME:-$HOME/.config}/directories | fzf)"
 map gh
-map H top
-map L bottom
+map g top
 map D delete
-map p paste
-map x cut
-map y paste
-
+map E extract
 map C copyto
 map M moveto
 map <c-n> push :mkdir<space>
-map R reload
-map s shell
-map o xdgopen $f
+map <c-r> reload
+map <c-s> set hidden!
+map <enter> shell
+map x $$f
+map X !$f
+map o &mimeopen $f
+map O $mimeopen --ask $f
 
 map A rename # at the very end
 map c push A<c-u> # new rename
 map I push A<c-a> # at the very beginning
 map i push A<a-b><a-b><a-f> # before extention
 map a push A<a-b> # after extention
-map b bulkrename
+map B bulkrename
+map b $setbg $f
 
 map <c-e> down
 map <c-y> up
