@@ -1,9 +1,7 @@
-
-
 "query:Starred Articles:flags # \"s\"" meta
----------------------
------- TORRENT ------
----------------------
+#---------------------
+#------ TORRENT ------
+#---------------------
 https://www.synologia.com/rss/pctmix.com "~TORRENT: Pctmix" torrent
 --https://www.yadixv.com/rss.xml "~TORRENT: yadivx" torrent
 --https://www.yadixv.com/series/rss.xml "~TORRENT: yadivx Series" torrent
@@ -13,9 +11,10 @@ https://www.synologia.com/rss/pctmix.com "~TORRENT: Pctmix" torrent
 https://www.yadixv.com/musica/rss.xml "~TORRENT: yadivx Música" torrent
 http://rss.epublibre.org/rss/semanal "~TORRENT: Epublibre" torrent
 https://rarbg.to/rssdd.php?categories=23 "~TORRENT: Rarbg Music" torrent
----------------------
------- YOUTUBE ------
----------------------
+
+#---------------------
+#------ YOUTUBE ------
+#---------------------
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~YOUTUBE: Distrotube"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg "~YOUTUBE: Erik Dubois"
@@ -51,12 +50,17 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCe2C8jlvtp_UGsQZExBSdZg "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFk8kgNu_bqsRZewxMGqkzQ "~YOUTUBE: Emacs SF" emacs
 https://www.youtube.com/feeds/videos.xml?channel_id=UCuP6xPt0WTeZu32CkQPpbvA "~YOUTUBE: LXD" lxd
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMVky0AEACLisBqM6mXxCng "~YOUTUBE: LATTE AND CODE" programacion
----------------------
----------------------
------- RSS ----------
----------------------
-https://twitchrss.appspot.com/vod/S4vitaar "~TWITCH - Savitar"
-https://twitchrss.appspot.com/vod/ThePrimeagen "~TWITCH - ThePrimeagen"
+
+#---------------------
+#------ TWITCH -------
+#---------------------
+https://twitchrss.appspot.com/vod/S4vitaar "~TWITCH: Savitar" programacion
+https://twitchrss.appspot.com/vod/ThePrimeagen "~TWITCH: ThePrimeagen" programacion
+https://twitchrss.appspot.com/vod/thealtf4stream "~TWITCH: ThePAltF4Stream" programacion
+
+#---------------------
+#------ RSS ----------
+#---------------------
 https://vimways.org/index.xml "~NEWSFEED: Vimways"
 https://nikodoko.com/index.xml "~NEWSFEED: Mikodoko"
 https://feeds.feedburner.com/d0od "~NEWSFEED: d0od"
@@ -90,14 +94,15 @@ http://feeds.arstechnica.com/arstechnica/open-source "~NEWSFEED: ArsTechnica (Op
 https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
 https://www.chrisatmachine.com/rss.xml "~NEWSFEED: Crisatmachine Vim"
 
---https://www.arquitecturajava.com/feed/ "~NEWSFEED: Arquitectura java"
+#https://www.arquitecturajava.com/feed/ "~NEWSFEED: Arquitectura java"
 https://pavelmakhov.com/feed.xml "~NEWSFEED: awesomewm pavel"
 https://feeds.feedburner.com/Ofertaman "~NEWSFEED: Ofertaman"
 https://www.eduardocollado.com/feed/ "~NEWSFEED: Eduardo collado"
 https://pavelmakhov.com/feed.xml "~NEWSFEED: awesomewm pavel"
----------------------
------- GIT ----------
----------------------
+
+#---------------------
+#------ GIT ----------
+#---------------------
 https://github.com/neovim/neovim/releases.atom "~GITHUB: Neovim releases"
 https://github.com/vim/vim/releases.atom "~GITHUB: Vim releases"
 https://github.com/neoclide/coc.nvim/releases.atom "~GITHUB: Coc releases"
@@ -112,9 +117,10 @@ https://github.com/LukeSmithxyz.atom "~GITHUB: LukeSmithxyz"
 https://github.com/BrodieRobertson.atom "~GITHUB: BrodieRobertson"
 https://github.com/newsboat/newsboat/releases.atom "~GITHUB: Newsboat Release"
 https://github.com/vimwiki/vimwiki/releases.atom "~GITHUB: vimwiki Release"
----------------------
------- REDDIT -------
----------------------
+
+#---------------------
+#------ REDDIT -------
+#---------------------
 https://www.reddit.com/r/vim/.rss  "~REDDIT: r/vim"
 https://www.reddit.com/r/neovim/.rss  "~REDDIT: r/neovim"
 https://www.reddit.com/r/unixporn/.rss "~REDDIT: r/unixporn"
@@ -123,9 +129,10 @@ https://www.reddit.com/r/dwm.rss "~REDDIT: r/dwm"
 https://www.reddit.com/r/commandline.rss "~REDDIT: r/commandline"
 https://www.reddit.com/r/ubuntu.rss "~REDDIT: r/ubuntu"
 https://www.reddit.com/r/awesomewm.rss "~REDDIT: r/awesomewm"
--------------------------
--------SOURCEFORGE-------
--------------------------
+
+#-------------------------
+#-------SOURCEFORGE-------
+#-------------------------
 https://sourceforge.net/p/clonezilla/activity/feed "~SOURCEFORGE: Clonezilla"
 https://sourceforge.net/p/mx-linux/activity/feed "~SOURCEFORGE: MX Linux"
 https://sourceforge.net/p/antix-linux/activity/feed "~SOURCEFORGE: AntiX"

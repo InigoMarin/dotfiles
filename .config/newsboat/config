@@ -40,6 +40,7 @@ highlight feedlist "NEWSFEED: .*" green default
 highlight feedlist "REEDIT: .*" white default
 highlight feedlist "GITHUB: .*" magenta default
 highlight feedlist "TORRENT: .*" cyan default
+highlight feedlist "TWITCH: .*" blue default
 
 text-width 80
 
@@ -48,7 +49,7 @@ macro , open-in-browser
 macro v set browser "setsid nohup mpv %u"; open-in-browser ; set browser linkhandler
 macro t set browser "transadd %u"; open-in-browser ; set browser linkhandler
 macro a set browser "pctmix %u"; open-in-browser ; set browser linkhandler
-macro w set browser "qutebrowser %u"; open-in-browser ; set browser linkhandler
+macro w set browser "w3m %u"; open-in-browser ; set browser linkhandler
 macro c set browser "sr google $(xsel -p)" ; open-in-browser ; set browser linkhandler
 macro i set browser "imdb"; open-in-browser ; set browser linkhandler
 macro r set browser "tuir %u"; open-in-browser ; set browser  linkhandler
