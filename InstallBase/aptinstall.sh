@@ -145,3 +145,7 @@ install volumeicon-alsa
 # KODI
 install kodi
 install kodi-pvr-hts
+
+# Task management
+install taskwarrior
+install timewarrior
