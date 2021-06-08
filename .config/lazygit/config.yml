@@ -1,0 +1,29 @@
+gui:
+  # stuff relating to the UI
+  scrollHeight: 2 # how many lines you scroll by
+  scrollPastBottom: true # enable scrolling past the bottom
+  theme:
+    activeBorderColor:
+      - magenta
+      - bold
+    inactiveBorderColor:
+      - white
+    optionsTextColor:
+      - blue
+    selectedLineBgColor:
+      - reverse
+  commitLength:
+    show: true
+git:
+  merging:
+    # only applicable to unix users
+    manualCommit: false
+  skipHookPrefix: WIP
+  autoFetch: true
+update:
+  method: prompt # can be: prompt | background | never
+  days: 14 # how often an update is checked for
+reporting: 'on' # one of: 'on' | 'off' | 'undetermined'
+confirmOnQuit: false
+os:
+  opencommand: code -r {{filename}}
