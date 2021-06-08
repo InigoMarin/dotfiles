@@ -5,7 +5,7 @@ set diff-options = --pretty=short
 set vertical-split = false
 
 # color status 14 default
-color cursor default red
+color cursor default blue
 #color title-focus white 236
 #color title-blur 240 236
 #color date 238 default
