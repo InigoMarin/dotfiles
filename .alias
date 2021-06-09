@@ -15,6 +15,10 @@ alias g='lazygit'
 alias o='xdg-open'
 alias ys='straw-viewer'
 alias src='sr -browser=/usr/bin/w3m'
+alias tw='taskwarrior-tui'
+alias lzg='lazygit'
+alias lzd='lazydocker'
+alias lzn='lazynpm'
 
 # vim and emacs
 alias v='nvim'

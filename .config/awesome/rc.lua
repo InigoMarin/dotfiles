@@ -246,7 +246,8 @@ globalkeys = my_table.join(
     {description = "run ncmpcpp", group = "hotkeys"}),
 
 	-- F Keys
-	
+	awful.key({ modkey }, "F1",     function () awful.spawn(terminal .. " -e lazydocker") end ,
+              {description = "run lazydokeer", group = "launcher"}),
 	awful.key({ modkey }, "F2",     function () awful.spawn("kodi") end ,
               {description = "run kodi", group = "launcher"}),
 	awful.key({ modkey }, "F3",     function () awful.spawn("displayselect") end ,
