@@ -26,6 +26,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCNHWpNqiM8yOQcHXtsluD7Q "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVeW9qkBjo3zosnqUbG7CFw "~YOUTUBE: John Hammond" hack
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2o1vzpUIvgf0VMJIMKZ_rQ "~YOUTUBE: Julio Ureña" hack 
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8ENHE5xdFSwx71u3fDH5Xw "~YOUTUBE: ThePrimeagen" vim
+https://www.youtube.com/feeds/videos.xml?channel_id=UCd3dNckv1Za2coSaHGHl5aA "~YOUTUBE: TJ DeVries" vim
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~YOUTUBE: gotbletu" linux
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA "~YOUTUBE: Chrisatmach" linux
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFFLP0dKesrKWccYscdAr9A "~YOUTUBE: theurbanpenguin" linux 
@@ -51,13 +52,15 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCe2C8jlvtp_UGsQZExBSdZg "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFk8kgNu_bqsRZewxMGqkzQ "~YOUTUBE: Emacs SF" emacs
 https://www.youtube.com/feeds/videos.xml?channel_id=UCuP6xPt0WTeZu32CkQPpbvA "~YOUTUBE: LXD" lxd
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMVky0AEACLisBqM6mXxCng "~YOUTUBE: LATTE AND CODE" programacion
+https://www.youtube.com/feeds/videos.xml?channel_id=UCW5YeuERMmlnqo4oq8vwUpg "~YOUTUBE: Net ninja" programacion go
 
 #---------------------
 #------ TWITCH -------
 #---------------------
-https://twitchrss.appspot.com/vod/S4vitaar "~TWITCH: Savitar" programacion
-https://twitchrss.appspot.com/vod/ThePrimeagen "~TWITCH: ThePrimeagen" programacion
-https://twitchrss.appspot.com/vod/thealtf4stream "~TWITCH: ThePAltF4Stream" programacion
+https://twitchrss.appspot.com/vodonly/S4vitaar "~TWITCH: Savitar" programacion TWITCH
+https://twitchrss.appspot.com/vodonly/ThePrimeagen "~TWITCH: ThePrimeagen" programacion TWITCH
+https://twitchrss.appspot.com/vodonly/thealtf4stream "~TWITCH: ThePAltF4Stream" programacion TWITCH
+https://twitchrss.appspot.com/vodonly/teej_dv "~TWITCH: Teej_dv" programacion TWITCH
 
 #---------------------
 #------ RSS ----------
