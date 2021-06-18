@@ -68,7 +68,7 @@ local editorgui         = "geany"
 local filemanager       = "thunar"
 local mailclient        = "geary"
 local mediaplayer       = "vlc"
-local scrlocker         = "slimlock"
+local scrlocker         = "i3lock -t -i /home/ima/wallpapers/screenlock/lock.png"
 local terminal          = "alacritty"
 local virtualmachine    = "virtualbox"
 
@@ -260,6 +260,8 @@ globalkeys = my_table.join(
 
 	awful.key({ modkey }, "F7",     function () awful.spawn("td-toggle") end ,
               {description = "run td-toggle", group = "launcher"}),
+	awful.key({ modkey }, "F12",     function () awful.spawn(scrlocker) end ,
+              {description = "run screen locker", group = "launcher"}),
 
     -- My dmenu scripts (Alt+Ctrl+Key)
     awful.key({ altkey, "Control" }, "e", function () awful.util.spawn( "./.dmenu/dmenu-edit-configs.sh" ) end,

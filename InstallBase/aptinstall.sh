@@ -109,6 +109,7 @@ install suckless-tools
 install rofi
 install j4-dmenu-desktop
 install wmctrl
+install i3lock
 
 install lxappearance
 install synaptic
