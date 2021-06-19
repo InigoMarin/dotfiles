@@ -40,6 +40,7 @@ install software-properties-common
 install git
 install tig
 install curl
+install html-xml-utils
 install jq
 install wget
 
