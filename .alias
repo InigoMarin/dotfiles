@@ -15,7 +15,6 @@ alias g='lazygit'
 alias o='xdg-open'
 alias ys='straw-viewer'
 alias src='sr -browser=/usr/bin/w3m'
-alias tw='taskwarrior-tui'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 alias lzn='lazynpm'
@@ -65,6 +64,25 @@ alias q='exit'
 
 # Diff
 alias quickdiff='diff --side-by-side --suppress-common-lines -W 150'
+
+# taskwarrior
+alias tw='taskwarrior-tui'
+alias in='task add +in'
+
+tickle () {
+    deadline=$1
+    shift
+    task add +in +tickle wait:$deadline $@
+}
+
+waiting (){
+    task $1 modify -in +waiting
+}
+
+alias tick=tickle
+alias think='tickle +1d'
+
+
 
 # Git Mios
 alias gs='git status'
