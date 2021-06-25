@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Spring Tool Suite 4
+Comment=Una descripción corta de esta aplicación.
+Icon=/home/ima/sts/icon.xpm
+Exec=/home/ima/sts/SpringToolSuite4
+Actions=
+Categories=Development;
