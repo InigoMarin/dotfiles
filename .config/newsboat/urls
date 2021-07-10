@@ -2,7 +2,7 @@
 #---------------------
 #------ TORRENT ------
 #---------------------
-https://www.synologia.com/rss/pctmix.com "~TORRENT: Pctmix" torrent
+https://www.synologia.com/rss/maxitorrent.com "~TORRENT: Maxitorrent" torrent
 --https://www.yadixv.com/rss.xml "~TORRENT: yadivx" torrent
 --https://www.yadixv.com/series/rss.xml "~TORRENT: yadivx Series" torrent
 --https://www.yadixv.com/dvdrip-bdrip/rss.xml "~TORRENT: yadivx Peliculas dvdrip" torrent
@@ -124,6 +124,7 @@ https://github.com/LukeSmithxyz.atom "~GITHUB: LukeSmithxyz"
 https://github.com/BrodieRobertson.atom "~GITHUB: BrodieRobertson"
 https://github.com/newsboat/newsboat/releases.atom "~GITHUB: Newsboat Release"
 https://github.com/vimwiki/vimwiki/releases.atom "~GITHUB: vimwiki Release"
+https://github.com/kdheepak/taskwarrior-tui/releases.atom "~GITHUB: taskwarrior-tui Release"
 
 #---------------------
 #------ REDDIT -------
