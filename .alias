@@ -20,8 +20,8 @@ alias lzd='lazydocker'
 alias lzn='lazynpm'
 
 # vim and emacs
-alias v='nvim'
-alias vim="nvim"
+alias v='lvim'
+alias vim="lvim"
 alias e='devour emacs'
 alias em="/usr/bin/emacs -nw"
 #alias emacs="emacsclient -c -a 'emacs'"
@@ -257,33 +257,33 @@ primereact-install()
     echo "${green}****************************************"
     echo "${green}Installing primereact"
     echo "${green}****************************************"
-    yarnpkg add primereact
+    npm install primereact
 
 
     echo "${green}****************************************"
     echo "${green}*Installing primeicons"
     echo "${green}****************************************"
-    yarnpkg add primeicons
+    npm install primeicons
 
     echo "${green}****************************************"
     echo "${green}*Installing primeflex"
     echo "${green}****************************************"
-    yarnpkg add primeflex
+    npm install primeflex
 
     echo "${green}****************************************"
     echo "${green}*Installing react-transition-group"
     echo "${green}****************************************"
-    yarnpkg add react-transition-group
+    npm install react-transition-group
 
     echo "${green}****************************************"
     echo "${green}*Installing classnames"
     echo "${green}****************************************"
-    yarnpkg add classnames
+    npm install classnames
     
     echo "${green}****************************************"
     echo "${green}*Installing quill.js"
     echo "${green}****************************************"
-    yarnpkg add quill
+    npm install quill
 }
 
 
