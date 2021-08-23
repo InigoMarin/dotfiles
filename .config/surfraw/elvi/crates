@@ -5,7 +5,7 @@
 # DATE: Sat Agosto 21 2021
 #
 # DESC: Elvi to search Crates.io
-# elvis: elitetorrent  -- Search Crates  (crates.io)
+# elvis: crates  -- Search Crates  (crates.io)
 . surfraw || exit 1
 
 w3_usage_hook () {
