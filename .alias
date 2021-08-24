@@ -14,7 +14,7 @@ alias d='docker'
 alias g='lazygit'
 alias o='xdg-open'
 alias ys='straw-viewer'
-alias src='sr -browser=/usr/bin/w3m'
+alias src='sr -browser=w3m'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 alias lzn='lazynpm'
@@ -143,8 +143,6 @@ alias trhp='transmission-remote-cli -c 192.168.1.21:9091'
 alias s='googler'
 alias latexmkp='latexmk -pdf -pvc'
 
-alias src='surfraw -browser=$BROWSERCLI'          # use for surfraw bookmarks (CLI)
-alias srx='surfraw -browser=$BROWSER'             # use for surfraw bookmarks (GUI)
 # sudo apt install fortunes fortunes-es fortunes-es-off lolcat
 
 # fortune -l | cowsay
