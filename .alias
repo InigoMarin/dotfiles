@@ -87,7 +87,7 @@ alias think='tickle +1d'
 # Git Mios
 alias gs='git status'
 alias ga='git add -A'
-alias gp='git push origin HEAD'
+alias gP='git push origin HEAD'
 alias gd='diff --color --color-words --abbrev'
 alias gdt='git dif --cached'
 alias gdt='git difftool'
@@ -96,7 +96,7 @@ alias gbd="git branch -d"
 alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gps='git push'
-alias gpl='git pull'
+alias gp='git pull'
 alias gplr='find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git pull" \;'
 alias gm='git merge'
 alias gr="git rebase"
