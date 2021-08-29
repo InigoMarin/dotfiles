@@ -101,7 +101,7 @@ alias gplr='find . -type d -name .git -exec sh -c "cd \"{}\"/../ && pwd && git p
 alias gm='git merge'
 alias gr="git rebase"
 alias gc='git commit -m'
-alias gl="git log --oneline --decorate --graph"
+alias gl="git log --oneline --decorate --graph --pretty=format:'%C(auto)%h%d (%cr) %cn <%ce> %s'"
 alias glog="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 alias glga="git log --graph --oneline --all --decorate"
 alias grh='git reset --hard HEAD'
