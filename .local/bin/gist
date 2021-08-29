@@ -1,0 +1,2 @@
+#!/bin/sh
+gh gist list | fzf | cut -f 1 | xargs -i{} gh gist edit "{}"
