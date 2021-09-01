@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rofi -show emoji -modi emoji -config ~/.config/rofi/configh
+
