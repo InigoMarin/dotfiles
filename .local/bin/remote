@@ -1,0 +1,2 @@
+#!/bin/sh
+find  $HOME/.local/share/remmina/*.remmina | rofi -dmenu | xargs -I {} echo "remmina -c {}"   | sh
