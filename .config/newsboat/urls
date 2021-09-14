@@ -111,6 +111,7 @@ https://pavelmakhov.com/feed.xml "~NEWSFEED: awesomewm pavel"
 #------ GIT ----------
 #---------------------
 https://github.com/neovim/neovim/releases.atom "~GITHUB: Neovim releases"
+https://github.com/ChristianChiarulli/lvim/commits/master.atom "~GITHUB: lvim ChristianChiarulli commits "
 https://github.com/vim/vim/releases.atom "~GITHUB: Vim releases"
 https://github.com/neoclide/coc.nvim/releases.atom "~GITHUB: Coc releases"
 https://github.com/LukeSmithxyz/dwm/commits/master.atom "~GITHUB: Dwm LukeSmithxyz commits "
@@ -125,6 +126,7 @@ https://github.com/BrodieRobertson.atom "~GITHUB: BrodieRobertson"
 https://github.com/newsboat/newsboat/releases.atom "~GITHUB: Newsboat Release"
 https://github.com/vimwiki/vimwiki/releases.atom "~GITHUB: vimwiki Release"
 https://github.com/kdheepak/taskwarrior-tui/releases.atom "~GITHUB: taskwarrior-tui Release"
+https://github.com/lzeke0/TwitchRSS/commits/master.atom "~GITHUB: TwitchRSS commits"
 
 #---------------------
 #------ REDDIT -------
