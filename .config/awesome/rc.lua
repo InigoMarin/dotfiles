@@ -974,6 +974,11 @@ awful.rules.rules = {
 
 	{ rule = { class = "keepass2" }, properties = { maximized = true, tag = " PASS " } },
 
+	{
+		rule = { instance = "crx_fmgjjmmmlfnkbppncabfkddbjimcfncm" },
+		properties = { maximized = true, tag = " EMAIL " },
+	},
+
 	{ rule = { class = "org.remmina.Remmina" }, properties = { tag = " RDP " } },
 
 	{ rule = { class = "VirtualBox Manager" }, properties = { maximized = true } },
