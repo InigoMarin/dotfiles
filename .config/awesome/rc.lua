@@ -972,7 +972,7 @@ awful.rules.rules = {
 
 	{ rule = { class = "Postman" }, properties = { maximized = true, tag = " API " } },
 
-	{ rule = { class = "keepass2" }, properties = { maximized = true, tag = " PASS " } },
+	{ rule = { class = "KeePass2" }, properties = { maximized = true, tag = " PASS " } },
 
 	{
 		rule = { instance = "crx_fmgjjmmmlfnkbppncabfkddbjimcfncm" },
