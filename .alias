@@ -116,7 +116,7 @@ alias clean='sudo apt-get autoclean && sudo apt-get autoremove'
 
 alias up='wakeonlan BA:D1:6D:8C:78:B7'
 alias hpilo='ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 ima@192.168.1.20'
-alias vps='ssh ubuntu@maringarcia.xyz'
+alias vps='ssh root@172.104.133.94'
 
 # Python
 alias ve='python3 -m venv ./venv'
