@@ -22,7 +22,7 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 
 # Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -e
+bindkey -v
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
@@ -150,12 +150,16 @@ bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 export SDKMAN_DIR="/home/ima/.sdkman"
 [[ -s "/home/ima/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ima/.sdkman/bin/sdkman-init.sh"
 
-export ANDROID_HOME="/home/ima/Android/Sdk"
 # Dart and flutter path add
 export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:/home/ima/flutter/bin"
 
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # Autojump
 [[ -s /home/ima/.autojump/etc/profile.d/autojump.sh ]] && source /home/ima/.autojump/etc/profile.d/autojump.sh
 
 autoload -U compinit && compinit -u
+
+
+
