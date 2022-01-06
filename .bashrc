@@ -126,3 +126,4 @@ fi
 export SDKMAN_DIR="/home/ima/.sdkman"
 [[ -s "/home/ima/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ima/.sdkman/bin/sdkman-init.sh"
 
+. "$HOME/.cargo/env"
