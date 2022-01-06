@@ -242,6 +242,13 @@ globalkeys = my_table.join(
 		group = "hotkeys",
 	}),
 
+	awful.key({ modkey }, "t", function()
+		awful.spawn("td-toggle")
+	end, {
+		description = "transmission daemon start",
+		group = "hotkeys",
+	}),
+
 	awful.key({ modkey }, "d", function()
 		awful.spawn("rofi -show run")
 	end, {
@@ -826,7 +833,7 @@ clientkeys = my_table.join(
 		description = "move to screen",
 		group = "client",
 	}),
-	awful.key({ modkey }, "t", function(c)
+	awful.key({ modkey,"Shift" }, "t", function(c)
 		c.ontop = not c.ontop
 	end, {
 		description = "toggle keep on top",
