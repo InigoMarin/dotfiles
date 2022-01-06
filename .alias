@@ -22,7 +22,6 @@ alias lzn='lazynpm'
 # vim and emacs
 alias v='lvim'
 alias vim="lvim"
-alias e='devour emacs'
 alias em="/usr/bin/emacs -nw"
 #alias emacs="emacsclient -c -a 'emacs'"
 alias doomsync="~/.emacs.d/bin/doom sync"
@@ -50,13 +49,12 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias ls='ls --color=auto'
+alias ls='exa --icons --color=auto'
 alias cp='cp -i'  # confirm before overwriting something
 alias df='duf'
 #alias df='df -H -l'
 alias free='free -h ' # human readeble sizes
 alias cls='clear'
-alias ls='ls --color=auto'
 alias h='history'
 alias hs='history | grep'
 alias q='exit'
@@ -116,7 +114,7 @@ alias clean='sudo apt-get autoclean && sudo apt-get autoremove'
 
 alias up='wakeonlan BA:D1:6D:8C:78:B7'
 alias hpilo='ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 ima@192.168.1.20'
-alias vps='ssh root@172.104.133.94'
+alias vps='ssh ima@172.105.249.174'
 
 # Python
 alias ve='python3 -m venv ./venv'
