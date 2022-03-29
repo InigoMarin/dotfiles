@@ -129,6 +129,10 @@ alias sbs='mvn spring-boot:start'
 alias sps='mvn spring-boot:stop'
 alias sbb='mvn spring-boot:build-image'
 
+# Docker 
+alias dstart='docker container ls -f "status=exited" | tail -n +2 | fzf  | cut -d " " -f 1  |  xargs  -I{} docker start "{}"'
+alias dstop='docker container ls -f "status=running" | tail -n +2 | fzf  | cut -d " " -f 1  |  xargs  -I{} docker stop "{}"'
+
 # Extra
 #alias config='nvim /home/imarin/.config/i3/config'
 #alias configq='nvim /home/imarin/.config/qtile/config.py'
