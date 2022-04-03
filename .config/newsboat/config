@@ -1,7 +1,6 @@
 # -- feeds ---------------------------------------------------------------------
 
 auto-reload yes
-reload-time 120
 reload-threads 4
 download-retries 4
 download-timeout 10
@@ -9,9 +8,30 @@ prepopulate-query-feeds yes
 confirm-mark-feed-read no
 external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
+# --- keys -------------------------------------------------------------------
+bind-key j down
+bind-key k up
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+
 # -- display -------------------------------------------------------------------
 feed-sort-order title
 show-read-feeds no
+
 
 
 color info default default reverse
