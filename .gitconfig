@@ -1,17 +1,17 @@
 [user]
 	email = inigomaringarcia@gmail.com
 	name = Iñigo Marin
-    user = InigoMarin
+  user = InigoMarin
 [credential]
 	helper = cache --timeout=3600
-
-# define command which will be used when "nvim" is set as a merge tool
-[mergetool "nvim"]
-  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
-# set "nvim" as tool for merging
+[difftool]
+  prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
 [merge]
-  tool = nvim
-# automatically launch merge tool without displaying a prompt
+    tool = meld
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"# automatically launch merge tool without displaying a prompt
 [mergetool]
   prompt = false
 [core]
